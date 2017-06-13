@@ -1,0 +1,44 @@
+baseURL = "http://purusothaman.me/"
+languageCode = "en-us"
+relativeURLs = false
+title = "Purusothaman Ramanujam"
+disqusShortname = "purusothaman-ramanujam"
+paginate = 5
+theme = "hugo-geo"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+   series = "series"
+
+[params]
+	# Render the rotating globe in the sidebar
+	showglobe = true
+
+	# Include favicon
+	favicon = "favicon.ico"
+
+	# Google Analytics
+	analytics = "UA-42031335-1"
+	
+	# Email (optional)
+	email = "purushoth.r@gmail.com"
+	
+	# Header Title for the main page
+	header = "What I'm Thinking"
+	
+	# Sidebar profile picture
+	profilepic = "img/avatar.jpg"
+	
+	# Title/subtitle for the sidebar
+	title = "Purusothaman Ramanujam"
+	subtitle = "My Personal Flavour"
+	
+	# Social buttons for sidebar
+	# Each of these are optional
+	[[params.socialbuttons]]
+	faicon = "github"
+	url = "https://github.com/purus"
+
+[permalinks]
+    post = "/:title/"	

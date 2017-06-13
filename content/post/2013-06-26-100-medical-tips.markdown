@@ -1,0 +1,11 @@
+---
+categories:
+- Tamil
+date: 2013-06-26T01:18:19Z
+date_gmt: 2013-06-25 19:48:19 +0530
+published: true
+status: publish
+title: 100 மருத்துவக் குறிப்புகள்
+---
+
+<a href="/uploads/100-Medical-Health-Tips.pdf">100 மருத்துவக் குறிப்புகள்</a>
