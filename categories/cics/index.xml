@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cics on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/cics/</link>
+    <description>Recent content in Cics on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Jan 2012 10:19:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/cics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TSQ Vs. TDQ</title>
+      <link>http://purusothaman.me/tsq-vs.-tdq/</link>
+      <pubDate>Fri, 20 Jan 2012 10:19:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/tsq-vs.-tdq/</guid>
+      <description>In Temporary Storage Queues Data is read randomly, while in Transient Data Queues data must be read sequentially. In a TSQ data can be read any number of times as it remains in the queue until the entire Queue is deleted. In TDQ data item can be read once only. To reuse the TDQ it must be closed and reopened. Data can be changed in TSQ, but not in TDQ.</description>
+    </item>
+    
+  </channel>
+</rss>

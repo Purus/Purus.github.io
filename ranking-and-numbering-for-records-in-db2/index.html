@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta property="og:title" content="Ranking and Numbering for Records in DB2">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2012-01-23">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="http://purusothaman.me/ranking-and-numbering-for-records-in-db2/">
+    <meta property="og:site_name" content="Purusothaman Ramanujam">
+    
+    <meta name="generator" content="Hugo 0.21" />
+    <title>Ranking and Numbering for Records in DB2 &middot; Purusothaman Ramanujam</title>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="http://purusothaman.me/css/style.css">
+    
+    <link href="http://purusothaman.me/index.xml" rel="alternate" type="application/rss+xml" title="Purusothaman Ramanujam" />
+    
+    
+    <link rel="icon" href="http://purusothaman.me/favicon.ico" />
+    
+
+    
+    
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="http://purusothaman.me/">Purusothaman Ramanujam</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+		
+			<h1 class="text-center"><a href="http://purusothaman.me/">Purusothaman Ramanujam</a></h1>
+		
+		
+		
+			<small class="text-center center-block">My Personal Flavour</small>
+		
+		
+		
+			<img id="profile-pic" src="http://purusothaman.me//img/avatar.jpg" alt="My Picture" class="img-circle center-block">
+		
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/purus"><i class="fa fa-github fa-2x"></i></a>
+			
+
+			<a href="mailto:purushoth.r@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+		<div id="links" class="text-center">
+			
+			
+		</div>
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+<main>
+	<header>
+		<h1>Ranking and Numbering for Records in DB2</h1>
+	</header>
+
+	<article>
+		<p>DB2 supports ranking and numbering in much the same way that Oracle does.</p>
+
+<p>The available functions are:</p>
+
+<ul>
+<li>ROW_NUMBER(), which simply numbers the returned rows sequentially  &lt;&#47;li&gt;</li>
+<li>RANK(), which ranks the results, but, in the case of a tie, gives the same number to each and leaves a gap to compensate  &lt;&#47;li&gt;</li>
+<li>DENSE_RANK() operates the same as RANK() but doesn&rsquo;t leave any gaps.</li>
+</ul>
+
+<p><strong>Listing 1</strong> - Ranking and Numbering Results</p>
+
+<pre><code>select 
+client, MONTHEND, SALEVOL, 
+ROW_NUMBER() over (order by SALEVOL desc) AS RN, 
+RANK() over (order by SALEVOL desc) AS RANK, 
+DENSE_RANK() over (order by SALEVOL desc) AS DENSE
+from mysales
+where MONTHEND=DATE('1997-11-30')
+order by RN
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>CLIENT</th>
+<th>MONTHEND</th>
+<th>SALEVOL</th>
+<th>RN</th>
+<th>RANK</th>
+<th>DENSE</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>CYRIX</td>
+<td>11/30/1997</td>
+<td>120</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>BIG BLUE</td>
+<td>11/30/1997</td>
+<td>106</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>EGGHEAD</td>
+<td>11/30/1997</td>
+<td>106</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>DEVX</td>
+<td>11/30/1997</td>
+<td>80</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>FIGTREE</td>
+<td>11/30/1997</td>
+<td>62</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>ACME</td>
+<td>11/30/1997</td>
+<td>20</td>
+<td>6</td>
+<td>6</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+
+<p>The results need not be returned in rank order. We may wish to show each client&rsquo;s rank while listing them alphabetically.</p>
+
+<p><strong>Listing 2</strong> -  Return Ranks in Any Order</p>
+
+<pre><code>select
+CLIENT, SALEVOL,
+RANK() over (order by SALEVOL desc) AS RANK
+from mysales
+where MONTHEND=DATE('1997-11-30')
+order by CLIENT
+</code></pre>
+
+<p>|CLIENT   |  SALEVOL |RANK|<br />
+|&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;-|&mdash;-|
+|ACME     |       20 |   6|<br />
+|BIG BLUE |      106 |   2|
+|CYRIX    |      120 |   1|<br />
+|DEVX     |       80 |   4|
+|EGGHEAD  |      106 |   2|<br />
+|FIGTREE  |       62 |   5|</p>
+
+<p>One application of ROW_NUMBER is to select a numbered range  of rows from the middle of your results. For example, you could  retrieve the next three clients following the top two.</p>
+
+<p><strong>Listing 3</strong> - Selecting Rows by Number</p>
+
+<pre><code>WITH ALLSALES AS 
+(SELECT CLIENT, SUM(SALEVOL) AS TOTALVOL,
+ROW_NUMBER() OVER
+(ORDER BY SUM(SALEVOL) DESC, CLIENT)
+AS RN
+FROM MYSALES 
+GROUP BY CLIENT)
+
+SELECT
+CLIENT, TOTALVOL, RN
+FROM ALLSALES
+WHERE RN BETWEEN 3 AND 5
+ORDER BY RN
+</code></pre>
+
+<p>|CLIENT   |  TOTALVOL  |RN|
+|&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;|&ndash;|
+|BIG BLUE |      4781  | 3|
+|FIGTREE  |      3986  | 4|
+|ACME     |      3044  | 5|</p>
+
+	</article>
+</main>
+
+<div id="bottom-nav" class="text-center center-block">
+	<a href=" http://purusothaman.me/" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
+</div>
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'purusothaman-ramanujam';
+    var disqus_identifier = 'http:\/\/purusothaman.me\/ranking-and-numbering-for-records-in-db2\/';
+    var disqus_title = 'Ranking and Numbering for Records in DB2';
+    var disqus_url = 'http:\/\/purusothaman.me\/ranking-and-numbering-for-records-in-db2\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42031335-1', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "http:\/\/purusothaman.me\/";
+  </script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="http://purusothaman.me//js/App.js"></script>
+  
+</body>
+</html>

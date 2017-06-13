@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sdsf on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/sdsf/</link>
+    <description>Recent content in Sdsf on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Jan 2012 15:25:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/sdsf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Filtering Jobs in Spool</title>
+      <link>http://purusothaman.me/filtering-jobs-in-spool/</link>
+      <pubDate>Wed, 18 Jan 2012 15:25:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/filtering-jobs-in-spool/</guid>
+      <description>There is a possibility to list only the jobs which has ABENDED, leaving out all other jobs in the spool.
+For such a kind of listing, use the primary command FILTER on the command line as given in the examples below.
+FIL MAX AB* - shows jobs that has ABENDS  Other Examples are:
+Shows jobs that has JCL errors:
+FIL MAX ‘JCL ERROR’  Shows jobs with “exceptional conditions”:</description>
+    </item>
+    
+    <item>
+      <title>Rearrage SDSF Columns</title>
+      <link>http://purusothaman.me/rearrage-sdsf-columns/</link>
+      <pubDate>Wed, 18 Jan 2012 15:22:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/rearrage-sdsf-columns/</guid>
+      <description>If you want to rearrange the columns in SDSF.
+ Go to SDSF;ST.
+ In command line type &amp;ldquo;arr ?&amp;rdquo;.
+ This will bring the complete list of SDSF column names.
+ You can move the columns using &amp;ldquo;/&amp;rdquo; and &amp;ldquo;//&amp;rdquo;.
+  One Column in the SDSF that we can bring to the front position is the MAX-RC (which usually is the last column in SDSF) which shows the completion code or the abend code of the job.</description>
+    </item>
+    
+  </channel>
+</rss>

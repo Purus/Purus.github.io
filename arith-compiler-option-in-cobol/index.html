@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta property="og:title" content="ARITH Compiler Option in COBOL">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2012-04-26">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="http://purusothaman.me/arith-compiler-option-in-cobol/">
+    <meta property="og:site_name" content="Purusothaman Ramanujam">
+    
+    <meta name="generator" content="Hugo 0.21" />
+    <title>ARITH Compiler Option in COBOL &middot; Purusothaman Ramanujam</title>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="http://purusothaman.me/css/style.css">
+    
+    <link href="http://purusothaman.me/index.xml" rel="alternate" type="application/rss+xml" title="Purusothaman Ramanujam" />
+    
+    
+    <link rel="icon" href="http://purusothaman.me/favicon.ico" />
+    
+
+    
+    
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="http://purusothaman.me/">Purusothaman Ramanujam</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+		
+			<h1 class="text-center"><a href="http://purusothaman.me/">Purusothaman Ramanujam</a></h1>
+		
+		
+		
+			<small class="text-center center-block">My Personal Flavour</small>
+		
+		
+		
+			<img id="profile-pic" src="http://purusothaman.me//img/avatar.jpg" alt="My Picture" class="img-circle center-block">
+		
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/purus"><i class="fa fa-github fa-2x"></i></a>
+			
+
+			<a href="mailto:purushoth.r@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+		<div id="links" class="text-center">
+			
+			
+		</div>
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+<main>
+	<header>
+		<h1>ARITH Compiler Option in COBOL</h1>
+	</header>
+
+	<article>
+		<p>ARITH affects the maximum number of digits that you can code for integers, and the number of digits used in fixed-point intermediate results. By specifying ARITH complier option we can control the maximum number of digits allowed for decimal numbers (packed decimal, zoned decimal and numeric-edited data items and numeric literals).</p>
+
+<ul>
+<li><p>ARITH(EXTEND)  :  Max. Number of digits 31.</p></li>
+
+<li><p>ARITH(COMPAT) : Max. Number of digits 18.</p></li>
+</ul>
+
+<p>Default is: ARITH(COMPAT)</p>
+
+<p>Abbreviations are: AR(C|E)</p>
+
+<p>Arith-extend is performance hampering because of larger intermediate results.</p>
+
+<p>When you specify ARITH(EXTEND):</p>
+
+<ul>
+<li>The maximum number of digit positions that you can specify in the PICTURE clause for packed-decimal, external-decimal, and numeric-edited data items is raised from 18 to 31.</li>
+<li>The maximum number of digits that you can specify in a fixed-point numeric literal is raised from 18 to 31. You can use numeric literals with large precision anywhere that numeric literals are currently allowed, including:
+
+<ul>
+<li>Operands of PROCEDURE DIVISION statements</li>
+<li>VALUE clauses (for numeric data items with large precision PICTURE)</li>
+<li>Condition-name values (on numeric data items with large-precision PICTURE)</li>
+</ul></li>
+<li>The maximum number of digits that you can specify in the arguments to NUMVAL and NUMVAL-C is raised from 18 to 31.</li>
+<li>The maximum value of the integer argument to the FACTORIAL function is 29.</li>
+<li>Intermediate results in arithmetic statements use extended mode.</li>
+</ul>
+
+<p>When you specify ARITH(COMPAT):</p>
+
+<ul>
+<li>The maximum number of digit positions in the PICTURE clause for packed-decimal, external-decimal, and numeric-edited data items is 18.</li>
+<li>The maximum number of digits in a fixed-point numeric literal is 18.</li>
+<li>The maximum number of digits in the arguments to NUMVAL and NUMVAL-C is 18.</li>
+<li>The maximum value of the integer argument to the FACTORIAL function is 28.</li>
+<li>Intermediate results in arithmetic statements use compatibility mode.</li>
+</ul>
+
+	</article>
+</main>
+
+<div id="bottom-nav" class="text-center center-block">
+	<a href=" http://purusothaman.me/" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
+</div>
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'purusothaman-ramanujam';
+    var disqus_identifier = 'http:\/\/purusothaman.me\/arith-compiler-option-in-cobol\/';
+    var disqus_title = 'ARITH Compiler Option in COBOL';
+    var disqus_url = 'http:\/\/purusothaman.me\/arith-compiler-option-in-cobol\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42031335-1', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "http:\/\/purusothaman.me\/";
+  </script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="http://purusothaman.me//js/App.js"></script>
+  
+</body>
+</html>

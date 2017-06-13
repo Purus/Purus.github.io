@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta property="og:title" content="Linear Regression for Machine Learning">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-05-20">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="http://purusothaman.me/linear-regression-for-machine-learning/">
+    <meta property="og:site_name" content="Purusothaman Ramanujam">
+    
+    <meta name="generator" content="Hugo 0.21" />
+    <title>Linear Regression for Machine Learning &middot; Purusothaman Ramanujam</title>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="http://purusothaman.me/css/style.css">
+    
+    <link href="http://purusothaman.me/index.xml" rel="alternate" type="application/rss+xml" title="Purusothaman Ramanujam" />
+    
+    
+    <link rel="icon" href="http://purusothaman.me/favicon.ico" />
+    
+
+    
+    
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="http://purusothaman.me/">Purusothaman Ramanujam</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+		
+			<h1 class="text-center"><a href="http://purusothaman.me/">Purusothaman Ramanujam</a></h1>
+		
+		
+		
+			<small class="text-center center-block">My Personal Flavour</small>
+		
+		
+		
+			<img id="profile-pic" src="http://purusothaman.me//img/avatar.jpg" alt="My Picture" class="img-circle center-block">
+		
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/purus"><i class="fa fa-github fa-2x"></i></a>
+			
+
+			<a href="mailto:purushoth.r@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+		<div id="links" class="text-center">
+			
+			
+		</div>
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+<main>
+	<header>
+		<h1>Linear Regression for Machine Learning</h1>
+	</header>
+
+	<article>
+		
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Linear Regression is one of the basic concept used in Machine Learning. Do not think it&rsquo;s complex as it&rsquo;s related to Machine Learning. You have studied linear regression and even used without knowing it all your life.</p>
+
+<p>Linear regression is a simple statistics technique that predicts the value of an output variable(response) based on one or more input input(predictor) variables. At the end of performing linear regression we will have a linear relationship (a mathematical formula) between the input variable(s) and the response variable. Based on the derived formula we can estimate the value of the response, when some new input variable is given.</p>
+
+<p>For example let us consider a simple example. The below table gives you the distance you travel at the end of each hour in your car. At the end of first hour you would have gone 60 miles away and 120 miles at the end of second hour.</p>
+
+<table>
+<thead>
+<tr>
+<th>Hour</th>
+<th>Distance(Miles)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>60</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>120</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>180</td>
+</tr>
+</tbody>
+</table>
+
+<p>In the above example, &ldquo;Hours&rdquo; in the input variable and &ldquo;Distance&rdquo; is the output variable. The output variable is dependent on the input variable as the output value changes based on the input value. Can you predict how much distance your car could have gone at the end of 4th hour? Easy to predict the output as 240 miles, isn&rsquo;t?</p>
+
+<p>So linear regression is all about prediction and it&rsquo;s one of the Supervised Machine Learning type.</p>
+
+<p>In general any such linear regression problem can be mathematically represented as below.</p>
+
+<pre><code>Y = a + bX
+</code></pre>
+
+<p>Where:
+- X : input or independent variable
+- Y : output or dependent variable
+- a : constant
+- b : coefficient</p>
+
+<p>Our aim is to find the values of &ldquo;a&rdquo; and &ldquo;b&rdquo; so that we can find output &ldquo;Y&rdquo; for a given input &ldquo;X&rdquo;.</p>
+
+<h2 id="plotting-data">Plotting Data</h2>
+
+<p>When we plot the data for our example, it would look similar to the image below. It exactly defines the relationship between input and output variables.</p>
+
+<p>Our example have just one input variable called &ldquo;Hour&rdquo; and so it&rsquo;s called Univariate Linear Regression. Here are someother examples which have perfect relationship between input and output variables.</p>
+
+<ul>
+<li>Finding Cirumference of a circle based on it&rsquo;s diameter.</li>
+<li>Finding Celcius value of Fahrenheit degree temperature.</li>
+</ul>
+
+<p>For all these simple examples, the chart looks similar as shown above.</p>
+
+<p>Real world problem have much complex data and also have many more input parameters. Also they are not perfectly related to each other. To be more precise, let us consider the below examples.</p>
+
+<p><strong>House Price Vs. Number of Rooms</strong>:
+We all know that if number of rooms in the house increases, price of the house increases. But the increase is not perfectly gradual. Also price may vary based on the locality of the house and other factors like road-facing, beach view, etc.</p>
+
+<p><strong>Height Vs. Weight</strong>:
+As height increases, you&rsquo;d expect weight to increase, but not perfectly. We don&rsquo;t have any exact formula to find the increacement value.</p>
+
+<p><strong>Alcohol Consumed Vs. Blood Alcohol Content</strong>:
+As alcohol consumption increases, we expect blood alcohol content to increase in one&rsquo;s body. However the relationship is not perfect.</p>
+
+<p>To understand better, let us see some data for the problem of Height Vs. Weight.</p>
+
+<table>
+<thead>
+<tr>
+<th>Height</th>
+<th>Weight</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>63</td>
+<td>127</td>
+</tr>
+
+<tr>
+<td>64</td>
+<td>121</td>
+</tr>
+
+<tr>
+<td>66</td>
+<td>142</td>
+</tr>
+
+<tr>
+<td>69</td>
+<td>157</td>
+</tr>
+
+<tr>
+<td>69</td>
+<td>162</td>
+</tr>
+
+<tr>
+<td>71</td>
+<td>156</td>
+</tr>
+
+<tr>
+<td>71</td>
+<td>169</td>
+</tr>
+
+<tr>
+<td>72</td>
+<td>165</td>
+</tr>
+
+<tr>
+<td>73</td>
+<td>181</td>
+</tr>
+
+<tr>
+<td>75</td>
+<td>208</td>
+</tr>
+</tbody>
+</table>
+
+<p>On plotting the above data, we get the below chart. Unlike our previous chart, you can see that the values are scattered and it&rsquo;s not possible have a line pass through all the points.</p>
+
+<p><img src="/uploads/Regression_Line_Data.jpg" alt="Linear Regression Data Plot" title="Linear Regression Data Plot" /></p>
+
+<p>For this given problem, how do you predict weight of your friend who height is not in the list? This is where the prediction using linear regression comes to our help. We can plot a line across the points so that we can predict the value. But wait. There are several possibilities to draw a line for the given data points. Some of the possible ways are shown below.</p>
+
+<p><img src="/uploads/Regression_Line_Types.jpg" alt="Types of Plotting" title="Types of Plotting" /></p>
+
+<p>Predicting the value depends on this line. But from the several ways of plotting a line, I would say the below is the best fit line.</p>
+
+<p><img src="/uploads/Regression_Line_Best.jpg" alt="Linear Regression Best Fit" title="Linear Regression Best Fit" /></p>
+
+<p>How can one say this is the best fit for the given scattered data? T</p>
+
+	</article>
+</main>
+
+<div id="bottom-nav" class="text-center center-block">
+	<a href=" http://purusothaman.me/" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
+</div>
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'purusothaman-ramanujam';
+    var disqus_identifier = 'http:\/\/purusothaman.me\/linear-regression-for-machine-learning\/';
+    var disqus_title = 'Linear Regression for Machine Learning';
+    var disqus_url = 'http:\/\/purusothaman.me\/linear-regression-for-machine-learning\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42031335-1', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "http:\/\/purusothaman.me\/";
+  </script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="http://purusothaman.me//js/App.js"></script>
+  
+</body>
+</html>

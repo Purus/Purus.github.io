@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sort on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/sort/</link>
+    <description>Recent content in Sort on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Jun 2013 15:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/sort/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Replacing low values to spaces in Mainframe Sort</title>
+      <link>http://purusothaman.me/replacing-low-values-to-spaces-in-mainframe-sort/</link>
+      <pubDate>Wed, 26 Jun 2013 15:30:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/replacing-low-values-to-spaces-in-mainframe-sort/</guid>
+      <description>In Mainframe, using Sort, how can I replace all the low-values in a file to spaces?
+We can use ALTSEQ CODE to change the low-values or high-values to spaces in a file using Sort. Here&amp;rsquo;s an example of how you could change all low values (X&amp;rsquo;00&amp;rsquo;) to spaces (X&amp;rsquo;40&amp;rsquo;), in an FB data set with an LRECL of 80:
+ALTSEQ CODE=(0040) OUTREC FIELDS=(1,80,TRAN=ALTSEQ)  </description>
+    </item>
+    
+  </channel>
+</rss>

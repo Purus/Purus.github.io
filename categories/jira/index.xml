@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jira on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/jira/</link>
+    <description>Recent content in Jira on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jan 2017 16:49:34 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/jira/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting JIRA Issues based on filter using Java</title>
+      <link>http://purusothaman.me/getting-jira-issues-based-on-filter-using-java/</link>
+      <pubDate>Tue, 10 Jan 2017 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/getting-jira-issues-based-on-filter-using-java/</guid>
+      <description>Let&amp;rsquo;s see how to fetch all issues from JIRA in JAVA based on the provided JQL search filter.
+ To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to How to work with Atlassian JIRA API using Java.
+ The full code is provided below to get Name and Id of all available issue types.
+import com.</description>
+    </item>
+    
+  </channel>
+</rss>

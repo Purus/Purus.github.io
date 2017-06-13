@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/</link>
+    <description>Recent content on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 May 2017 23:29:33 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linear Regression for Machine Learning</title>
+      <link>http://purusothaman.me/linear-regression-for-machine-learning/</link>
+      <pubDate>Sat, 20 May 2017 23:29:33 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/linear-regression-for-machine-learning/</guid>
+      <description>Introduction Linear Regression is one of the basic concept used in Machine Learning. Do not think it&amp;rsquo;s complex as it&amp;rsquo;s related to Machine Learning. You have studied linear regression and even used without knowing it all your life.
+Linear regression is a simple statistics technique that predicts the value of an output variable(response) based on one or more input input(predictor) variables. At the end of performing linear regression we will have a linear relationship (a mathematical formula) between the input variable(s) and the response variable.</description>
+    </item>
+    
+    <item>
+      <title>Getting JIRA Issues based on filter using Java</title>
+      <link>http://purusothaman.me/getting-jira-issues-based-on-filter-using-java/</link>
+      <pubDate>Tue, 10 Jan 2017 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/getting-jira-issues-based-on-filter-using-java/</guid>
+      <description>Let&amp;rsquo;s see how to fetch all issues from JIRA in JAVA based on the provided JQL search filter.
+ To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to How to work with Atlassian JIRA API using Java.
+ The full code is provided below to get Name and Id of all available issue types.
+import com.</description>
+    </item>
+    
+    <item>
+      <title>Create a new Issue in JIRA using Java API</title>
+      <link>http://purusothaman.me/create-a-new-issue-in-jira-using-java-api/</link>
+      <pubDate>Thu, 22 Dec 2016 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/create-a-new-issue-in-jira-using-java-api/</guid>
+      <description>We are now going to see how to create new JIRA issue in JAVA using the REST API library. We can use this cod with some little modifications to bulk create several issues from an Excel sheet or an CSV file.
+ To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to How to work with Atlassian JIRA API using Java.</description>
+    </item>
+    
+    <item>
+      <title>Get JIRA Field ID using Java</title>
+      <link>http://purusothaman.me/get-jira-field-id-using-java/</link>
+      <pubDate>Sat, 12 Nov 2016 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/get-jira-field-id-using-java/</guid>
+      <description>Let&amp;rsquo;s see how to fetch the field Id from JIRA in JAVA using the REST API library provided by Atlassian.
+ To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to How to work with Atlassian JIRA API using Java.
+ The full code is provided below to get the ID value of a &amp;ldquo;Module Priority&amp;rdquo; field for the issue type &amp;ldquo;Defect&amp;rdquo; present in the project &amp;ldquo;PROJECT-KEY&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Getting all JIRA Issue Details using Java</title>
+      <link>http://purusothaman.me/getting-all-jira-issue-details-using-java/</link>
+      <pubDate>Mon, 10 Oct 2016 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/getting-all-jira-issue-details-using-java/</guid>
+      <description>Let&amp;rsquo;s see how to fetch all details of a given JIRA issue in JAVA using the REST API library provided by Atlassian.
+ To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to How to work with Atlassian JIRA API using Java.
+ The full code is provided below to get few basic details of an example issue called PROJECT-359.</description>
+    </item>
+    
+    <item>
+      <title>Getting all JIRA Issue Types using Java</title>
+      <link>http://purusothaman.me/getting-all-jira-issue-types-using-java/</link>
+      <pubDate>Sat, 01 Oct 2016 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/getting-all-jira-issue-types-using-java/</guid>
+      <description>Let&amp;rsquo;s see how to fetch all available issues from JIRA in JAVA using the REST API library provided by Atlassian.
+ To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to How to work with Atlassian JIRA API using Java.
+ The full code is provided below to get Name and Id of all available issue types.</description>
+    </item>
+    
+    <item>
+      <title>How to work with Atlassian JIRA API using Java</title>
+      <link>http://purusothaman.me/how-to-work-with-atlassian-jira-api-using-java/</link>
+      <pubDate>Sun, 18 Sep 2016 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/how-to-work-with-atlassian-jira-api-using-java/</guid>
+      <description>To work with JIRA REST API in Java, we need to import the required Java packages and we might also need to import the trust-store file.
+Java Package Dependencies If you are using Maven, you can easily add the below dependencies in your pom.xml file for working with Atlassian JIRA API.
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.atlassian.jira&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jira-rest-java-client-core&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.0.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.atlassian.jira&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jira-rest-java-client-api&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.0.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  Creating Trust Store File Now, you will need to add your certificate to the trust store so that Java can connect to your API backend.</description>
+    </item>
+    
+    <item>
+      <title>நிம்மதி சூழ்க!</title>
+      <link>http://purusothaman.me/%E0%AE%A8%E0%AE%BF%E0%AE%AE%E0%AF%8D%E0%AE%AE%E0%AE%A4%E0%AE%BF-%E0%AE%9A%E0%AF%82%E0%AE%B4%E0%AF%8D%E0%AE%95/</link>
+      <pubDate>Sun, 26 Apr 2015 21:05:09 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/%E0%AE%A8%E0%AE%BF%E0%AE%AE%E0%AF%8D%E0%AE%AE%E0%AE%A4%E0%AE%BF-%E0%AE%9A%E0%AF%82%E0%AE%B4%E0%AF%8D%E0%AE%95/</guid>
+      <description>சில நாட்களுக்கு முன்பு என் அலுவலக நண்பர் திரு.கோபி மூலமாக ஒரு பாடலை கேட்க நேர்ந்தது. நான் பல தத்துவ பாடல்களை இதற்கு முன் கேட்டிருந்தாலும், இந்த பாடலின் ஆழம் என்னை ஏதோ செய்தது.
+இது மரண ஒலமல்ல.. மரண கீதம். சொந்தங்களை இழந்தவர்களுக்கு கொஞ்சம் நிம்மதி தரும் என்று நம்புகிறேன்.
+இதைவிட அர்த்தமுள்ள படலை இனி எழுத முடியுமா என்பது சந்தேகம்தான். கவிஞர் வைரமுத்து எழுதிய இந்தப் பாடலில் எனக்கு பிடித்த சில வரிகள் இதோ.
+ ஜனனமும் பூமியில் புதியது இல்லை மரணத்தைப் போல் ஒரு பழையதும் இல்லை
+பாசம் உலாவிய கண்களும் எங்கே?
+பாய்ந்து துழாவிய கைகளும் எங்கே?</description>
+    </item>
+    
+    <item>
+      <title>Types of USA Visa</title>
+      <link>http://purusothaman.me/types-of-usa-visa/</link>
+      <pubDate>Sun, 16 Mar 2014 00:08:42 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/types-of-usa-visa/</guid>
+      <description>A Visas (Official Visas)
+ A-1: For Ambassadors, public ministers &amp;amp; consular office
+A-2: For immediate family members of A-1
+A-3: Attendants &amp;amp; servants of A-1 and A-2 holders
+ B (Business/Visitor) Visa
+ B-1 Temporary visitor for business
+B-2 Temporary visitor for leisure
+ C &amp;amp; D Visa (For Aliens in transit)
+ C-1,2: Alien in transit directly through US
+C-3: Family of C-1,C-2 in transit
+C-4: Transit without Visa(TWOV)</description>
+    </item>
+    
+    <item>
+      <title>Memes-Yearly Bonus</title>
+      <link>http://purusothaman.me/memes-yearly-bonus/</link>
+      <pubDate>Tue, 25 Feb 2014 23:29:33 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/memes-yearly-bonus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memes - Appraisal Meeting</title>
+      <link>http://purusothaman.me/memes---appraisal-meeting/</link>
+      <pubDate>Tue, 25 Feb 2014 23:22:18 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/memes---appraisal-meeting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memes - Coffee Break</title>
+      <link>http://purusothaman.me/memes---coffee-break/</link>
+      <pubDate>Tue, 25 Feb 2014 23:07:14 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/memes---coffee-break/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memes-Project Release</title>
+      <link>http://purusothaman.me/memes-project-release/</link>
+      <pubDate>Tue, 25 Feb 2014 22:59:50 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/memes-project-release/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memes - After Project Meetings</title>
+      <link>http://purusothaman.me/memes---after-project-meetings/</link>
+      <pubDate>Tue, 25 Feb 2014 22:44:39 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/memes---after-project-meetings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Running Cron in Windows </title>
+      <link>http://purusothaman.me/running-cron-in-windows/</link>
+      <pubDate>Wed, 20 Nov 2013 23:57:16 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/running-cron-in-windows/</guid>
+      <description>We all would have heard of Cron jobs, if you are involved in website management, development or working on Linux/Unix machines.
+What&amp;rsquo;s a cron?
+ Cron is nothing but an demon job running in the background without any user intervention. It gets executed automatically based on the predefined time interval.
+ Generally cron jobs are used to perform some maintenance activities in the server. For example, if you run a very popular blog, you can use the cron job to send out a weekly mail to all the users about the new blog posts.</description>
+    </item>
+    
+    <item>
+      <title>Solution for Disk Drive Full error with USB Pen Drives</title>
+      <link>http://purusothaman.me/solution-for-disk-drive-full-error-with-usb-pen-drives/</link>
+      <pubDate>Fri, 25 Oct 2013 22:42:36 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/solution-for-disk-drive-full-error-with-usb-pen-drives/</guid>
+      <description>When you copy large files (greater than 3 GB) to your USB pen drive, it&amp;rsquo;s almost sure that you will get an error alerting that &amp;ldquo;Disk drive is full&amp;rdquo;. I am sure you will be surprised on seeing this error as your USB pen drive will have more than 10 GB available. I swear, I did got surprised. I confirmed that my USB drive has enough space.
+I spend some time on finding out why this happens.</description>
+    </item>
+    
+    <item>
+      <title>French letters - modeles de lettres</title>
+      <link>http://purusothaman.me/french-letters---modeles-de-lettres/</link>
+      <pubDate>Fri, 06 Sep 2013 08:57:15 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/french-letters---modeles-de-lettres/</guid>
+      <description>Je voudrais partager quelques sites sur le sujet de &amp;ldquo;lettre&amp;rdquo;. OK, now in English. I would like to share some good website resources for writing all kinds of letters in French.
+http://www.modele-lettre.com - This site has good source of letters with more than 1000 models of letters. The letters are classified well under several categories for easy access and searching. This site has high quality content. You can even find some interesting stuffs on writing your CV in French.</description>
+    </item>
+    
+    <item>
+      <title>Monsta FTP - FileZilla like FTP software for browsers</title>
+      <link>http://purusothaman.me/monsta-ftp---filezilla-like-ftp-software-for-browsers/</link>
+      <pubDate>Wed, 04 Sep 2013 18:38:03 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/monsta-ftp---filezilla-like-ftp-software-for-browsers/</guid>
+      <description>You would have came across a FTP application like FileZilla or WinSCP which you have used to access a FTP server. These are Windows based and you need to install them on your desktop if you want to use them.
+As a developer I commonly come across some situations where I need to access a FTP server but not in the position to use the FileZilla or install it. And again I was today in that situation and did a small research to find an alternative approach.</description>
+    </item>
+    
+    <item>
+      <title>Overriding Concatenated Datasets in JCL</title>
+      <link>http://purusothaman.me/overriding-concatenated-datasets-in-jcl/</link>
+      <pubDate>Fri, 02 Aug 2013 09:00:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/overriding-concatenated-datasets-in-jcl/</guid>
+      <description>Lets assume that you have a PROC with the following step which has 5 concatenated steps.
+//STEP010 EXEC PGM=PROGRAM1 //INPUTF DD DSN=INPUT.FILE1,DISP=SHR // DD DSN=INPUT.FILE2,DISP=SHR // DD DSN=INPUT.FILE3,DISP=SHR // DD DSN=INPUT.FILE4,DISP=SHR // DD DSN=INPUT.FILE5,DISP=SHR  In the JCL which calls the above mentioned PROC, you want to override only one of the 5 concatenated files from PROC. For example, you want to override the 3rd concatenated file with another file called INPUT.</description>
+    </item>
+    
+    <item>
+      <title>Unlock Your Android Phone and Earn Money</title>
+      <link>http://purusothaman.me/unlock-your-android-phone-and-earn-money/</link>
+      <pubDate>Sat, 27 Jul 2013 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/unlock-your-android-phone-and-earn-money/</guid>
+      <description>Are you an smart phone user? How many times in a given day, you unlock your phone screen to work on it? Read the title of this article. Yes. You heard it right. You can earn some fortune when you unlocking your smart phone every time.
+You would have been fed-up with the advertisements that you receive in many free Android apps. Application developers make money by forcing the users to live with the advertisements.</description>
+    </item>
+    
+    <item>
+      <title>DB2 9 Family Fundamentals(000-730) - Q &amp; A</title>
+      <link>http://purusothaman.me/db2-9-family-fundamentals000-730---q--a/</link>
+      <pubDate>Mon, 08 Jul 2013 08:09:57 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/db2-9-family-fundamentals000-730---q--a/</guid>
+      <description>Read and Download several question and answers for the IBM DB2 9 certification exam.
+Section 1 - Planning (14%)
+ Knowledge of restricting data access Knowledge of the features or functions available in DB2 tools (just tools that come with product - distributed +space - i.e., control center, configuration advisor, configuration assistant, command line processor) Knowledge database workloads (OLTP vs warehousing) Knowledge of non-relational data concepts (extenders) Knowledge of XML data implications (non-shreading)  Section 2 - Security (11%)</description>
+    </item>
+    
+    <item>
+      <title>கவிதைகள் - பகுதி 9</title>
+      <link>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-9/</link>
+      <pubDate>Mon, 01 Jul 2013 22:10:53 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paris Desktop Wallpaper (HD)</title>
+      <link>http://purusothaman.me/paris-desktop-wallpaper-hd/</link>
+      <pubDate>Sun, 30 Jun 2013 10:12:23 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/paris-desktop-wallpaper-hd/</guid>
+      <description>Download 7 high quality wallpapers for your computer. The image might load little slow as the size of each image is 3MB. You can save those images for your local copy.</description>
+    </item>
+    
+    <item>
+      <title>கவிதைகள் - பகுதி 8</title>
+      <link>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-8/</link>
+      <pubDate>Fri, 28 Jun 2013 22:09:26 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Replacing low values to spaces in Mainframe Sort</title>
+      <link>http://purusothaman.me/replacing-low-values-to-spaces-in-mainframe-sort/</link>
+      <pubDate>Wed, 26 Jun 2013 15:30:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/replacing-low-values-to-spaces-in-mainframe-sort/</guid>
+      <description>In Mainframe, using Sort, how can I replace all the low-values in a file to spaces?
+We can use ALTSEQ CODE to change the low-values or high-values to spaces in a file using Sort. Here&amp;rsquo;s an example of how you could change all low values (X&amp;rsquo;00&amp;rsquo;) to spaces (X&amp;rsquo;40&amp;rsquo;), in an FB data set with an LRECL of 80:
+ALTSEQ CODE=(0040) OUTREC FIELDS=(1,80,TRAN=ALTSEQ)  </description>
+    </item>
+    
+    <item>
+      <title>100 மருத்துவக் குறிப்புகள்</title>
+      <link>http://purusothaman.me/100-%E0%AE%AE%E0%AE%B0%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AF%81%E0%AE%B5%E0%AE%95%E0%AF%8D-%E0%AE%95%E0%AF%81%E0%AE%B1%E0%AE%BF%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%95%E0%AE%B3%E0%AF%8D/</link>
+      <pubDate>Wed, 26 Jun 2013 01:18:19 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/100-%E0%AE%AE%E0%AE%B0%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AF%81%E0%AE%B5%E0%AE%95%E0%AF%8D-%E0%AE%95%E0%AF%81%E0%AE%B1%E0%AE%BF%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%95%E0%AE%B3%E0%AF%8D/</guid>
+      <description>100 மருத்துவக் குறிப்புகள்</description>
+    </item>
+    
+    <item>
+      <title>Ce n&#39;est pas vos oignons</title>
+      <link>http://purusothaman.me/ce-nest-pas-vos-oignons/</link>
+      <pubDate>Mon, 27 May 2013 16:16:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/ce-nest-pas-vos-oignons/</guid>
+      <description>Dans les expressions
+occupe-toi de tes oignons  ou
+ce ne sont pas tes oignons.  le terme oignon prend bizarrement le sens metaphorique de &amp;ldquo;affaires personnelles&amp;rdquo;. Cette expression est utilis&amp;eacute;e pour demander &amp;agrave; quelqu&amp;rsquo;un de trop curieux de rester hors de nos affaires personnelles ou d&amp;rsquo;arr&amp;ecirc;ter de poser des questions.
+Elle est plut&amp;ocirc;t argotique et doit donc &amp;ecirc;tre r&amp;eacute;serv&amp;eacute;e aux personnes que l&amp;rsquo;on peut offenser.
+Voulez-vous savour mon age? Je te dis pas - c&amp;rsquo;est pas tes oignons!</description>
+    </item>
+    
+    <item>
+      <title>கவிதைகள் - பகுதி 7</title>
+      <link>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-7/</link>
+      <pubDate>Sat, 25 May 2013 22:04:01 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ca fait un bon bout de temps</title>
+      <link>http://purusothaman.me/ca-fait-un-bon-bout-de-temps/</link>
+      <pubDate>Wed, 22 May 2013 15:58:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/ca-fait-un-bon-bout-de-temps/</guid>
+      <description>C&amp;rsquo;est quand vous avez rendu visite &amp;agrave; vos amis? Je pense que c&amp;rsquo;est longtemps. Ne c&amp;rsquo;est pas?
+Alors, on dit &amp;ldquo;&amp;Ccedil;a fait un bon bout de temps&amp;rdquo; pour &amp;ccedil;a.</description>
+    </item>
+    
+    <item>
+      <title>கவிதைகள் - பகுதி 6</title>
+      <link>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-6/</link>
+      <pubDate>Mon, 20 May 2013 22:02:04 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Why this Kolaveri di French Version</title>
+      <link>http://purusothaman.me/why-this-kolaveri-di-french-version/</link>
+      <pubDate>Fri, 03 May 2013 08:21:36 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/why-this-kolaveri-di-french-version/</guid>
+      <description>Our own song lyrics and singing for &amp;ldquo;Christmas&amp;rdquo; event in Alliance Fran&amp;ccedil;ais of Madras. We friends rocked the floor with the french version of &amp;ldquo;Why this Kolaveri di?&amp;lsquo;&amp;rdquo; song from Tamil :)
+ Lyrics of our song:
+Pourquoi cette col&amp;egrave;re col&amp;egrave;re col&amp;egrave;re &amp;hellip; dis !
+Pourquoi cette col&amp;egrave;re, col&amp;egrave;re, col&amp;egrave;re, &amp;hellip; dis !
+Pourquoi cette col&amp;egrave;re, col&amp;egrave;re, col&amp;egrave;re, &amp;hellip; dis !
+Pourquoi cette col&amp;egrave;re, &amp;hellip; &amp;hellip; dis !
+Tr&amp;egrave;s loin, c&amp;rsquo;est la lune lune</description>
+    </item>
+    
+    <item>
+      <title>கவிதைகள் - பகுதி 5</title>
+      <link>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-5/</link>
+      <pubDate>Thu, 25 Apr 2013 21:02:42 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fumer Comme un Pompier</title>
+      <link>http://purusothaman.me/fumer-comme-un-pompier/</link>
+      <pubDate>Sun, 10 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/fumer-comme-un-pompier/</guid>
+      <description>Avec cet expression vous pensez que les pompiers fument beacoup du tabac que les autres? Non.
+Cet expression signifie une personne fumant beacoup du tabac ou les cigarettes. En disant cet expression je rappelle un de mes amis qui fume beacoup chez mon bureau.</description>
+    </item>
+    
+    <item>
+      <title>கவிதைகள் - பகுதி 4</title>
+      <link>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-4/</link>
+      <pubDate>Mon, 30 Apr 2012 20:16:07 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COBOL Code Optimization</title>
+      <link>http://purusothaman.me/cobol-code-optimization/</link>
+      <pubDate>Fri, 27 Apr 2012 10:08:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/cobol-code-optimization/</guid>
+      <description>To assist in the optimization of the code, you should use the OPTIMIZE compiler option. With the OPTIMIZE(STD) or OPTIMIZE(FULL) options in effect, you may receive optimizations that include:
+ eliminating unnecessary branches simplifying inefficient branches simplifying the code for the out-of-line PERFORM statement, moving the performed paragraphs in-line,where possible simplifying the code for a CALL to a contained (nested) program, moving the called statements in-line,where possible eliminating duplicate computations eliminating constant computations aggregating moves of contiguous, equal-sized items into a single move deleting unreachable code  Additionally, with the OPTIMIZE(FULL) option in effect, you may also receive these optimizations:</description>
+    </item>
+    
+    <item>
+      <title>ARITH Compiler Option in COBOL</title>
+      <link>http://purusothaman.me/arith-compiler-option-in-cobol/</link>
+      <pubDate>Thu, 26 Apr 2012 09:08:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/arith-compiler-option-in-cobol/</guid>
+      <description>ARITH affects the maximum number of digits that you can code for integers, and the number of digits used in fixed-point intermediate results. By specifying ARITH complier option we can control the maximum number of digits allowed for decimal numbers (packed decimal, zoned decimal and numeric-edited data items and numeric literals).
+ ARITH(EXTEND) : Max. Number of digits 31.
+ ARITH(COMPAT) : Max. Number of digits 18.
+  Default is: ARITH(COMPAT)</description>
+    </item>
+    
+    <item>
+      <title>கவிதைகள் - பகுதி 3</title>
+      <link>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-3/</link>
+      <pubDate>Wed, 25 Apr 2012 19:59:49 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Converting a file from VB to FB.</title>
+      <link>http://purusothaman.me/converting-a-file-from-vb-to-fb./</link>
+      <pubDate>Wed, 21 Mar 2012 09:02:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/converting-a-file-from-vb-to-fb./</guid>
+      <description>DFSORT can be used to do VB to FB conversion, when sorting, copying or merging. The VTOF or CONVERT and OUTREC operands of OUTFIL can be used to change variable-length (e.g. VB) input records to fixed-length (e.g. FB) output records. VTOF or CONVERT indicates that conversion is to be performed and OUTREC defines the reformatted records. All output data sets for which VTOF or CONVERT is used must have or will be given fixed-length record formats.</description>
+    </item>
+    
+    <item>
+      <title>Recovering Deleted Flat Files in Mainframe</title>
+      <link>http://purusothaman.me/recovering-deleted-flat-files-in-mainframe/</link>
+      <pubDate>Wed, 21 Mar 2012 08:59:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/recovering-deleted-flat-files-in-mainframe/</guid>
+      <description>Flat files can be recovered by following the below mentioned steps.
+ Start 6 HLIST BCDS DSN(&amp;lsquo;filename&amp;rsquo;) Wait for the system notification Type the command HRECOVER &amp;lsquo;filename&amp;rsquo; and wait for system notification  Different variations of HRECOVER are given below.
+ HRECOVER &amp;lsquo;filename&amp;rsquo; : recovers with same name. HRECOVER &amp;lsquo;old filename&amp;rsquo; NEW (&amp;lsquo;new filename&amp;rsquo;) : recovers and assigns new name. HRECOVER &amp;lsquo;file name&amp;rsquo; REPLACE : recovers replacing a file with same name.</description>
+    </item>
+    
+    <item>
+      <title>AUTOTYPE Suggestion</title>
+      <link>http://purusothaman.me/autotype-suggestion/</link>
+      <pubDate>Wed, 21 Mar 2012 08:49:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/autotype-suggestion/</guid>
+      <description>How wonderful it feels when Internet explorer suggests names for URLs when we start typing the first few letters!
+Our mainframe also has the ability to do pretty much the same. Using KEYS command on the command line, assign a free PF key with the value AUTOTYPE. We are all set.
+
+Now use 3.4 to go to the Data Set list utility and then type the first few qualifier of the required data set.</description>
+    </item>
+    
+    <item>
+      <title>Options on DECLARE CURSOR</title>
+      <link>http://purusothaman.me/options-on-declare-cursor/</link>
+      <pubDate>Wed, 21 Mar 2012 06:58:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/options-on-declare-cursor/</guid>
+      <description>Use FOR READ/FETCH ONLY or WITH UR for retrieval only cursors. Use OPTIMIZE when you know the accurate number of rows that will be fetched Use ORDER BY only when sequence is important Use WITH HOLD statement to prevent COMMIT from destroying the cursor position in batch Programs. Select only those fields that you truly need Use only DCLGEN variables as predicates  While declaring CURSOR in handler we should use OPTIMIZE FOR n ROWS, if we want pass only n rows from DB2 handler back to calling program.</description>
+    </item>
+    
+    <item>
+      <title>Common DB2 SQL Codes</title>
+      <link>http://purusothaman.me/common-db2-sql-codes/</link>
+      <pubDate>Wed, 21 Mar 2012 06:51:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/common-db2-sql-codes/</guid>
+      <description>Successful Execution SQLCODE  000 SUCCESSFUL EXECUTION   Warning SQLCODE  +012 THE UNQUALIFIED COLUMN NAME column-name WAS INTERPRETED AS A CORRELATED REFERENCE   +098 A DYNAMIC SQL STATEMENT ENDS WITH A SEMICOLON   +100 ROW NOT FOUND FOR FETCH, UPDATE OR DELETE, OR THE RESULT OF A QUERY IS AN EMPTY TABLE   +110 SQL UPDATE TO A DATA CAPTURE TABLE NOT SIGNALED TO ORIGINATING SUBSYSTEM   +111 THE SUBPAGES OPTION IS NOT SUPPORTED FOR TYPE 2 INDEXES   +117 THE NUMBER OF INSERT VALUES IS NOT THE SAME AS THE NUMBER OF OBJECT COLUMNS   +162 TABLESPACE database-name.</description>
+    </item>
+    
+    <item>
+      <title>Useful List of SYSIBM tables</title>
+      <link>http://purusothaman.me/useful-list-of-sysibm-tables/</link>
+      <pubDate>Wed, 21 Mar 2012 06:35:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/useful-list-of-sysibm-tables/</guid>
+      <description>SYSCHECKDEP Column references for CHECK constraints
+SYSCHECKS CHECK constraint specifications
+SYSCHECKS2 (V7) Information about CHECK constraints on DB2 Catalog tables created for V7 or later
+SYSCOLAUTH The UPDATE privileges held by DB2 users on table or view columns
+SYSCOLDIST Cardinality, frequent value, and non-padded frequent value distribution statistics for the first key column of an index key
+SYSCOLDIST_HIST (V7) Column distribution statistics history
+SYSCOLSTATS The partition statistics for selected columns</description>
+    </item>
+    
+    <item>
+      <title>GDG - A Basic Introduction</title>
+      <link>http://purusothaman.me/gdg---a-basic-introduction/</link>
+      <pubDate>Thu, 09 Feb 2012 07:32:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/gdg---a-basic-introduction/</guid>
+      <description>Introduction
+GDG stands for Generation Data Group. Here a group of files are related functionally or chronologically and can be accessed individually or as a group. These files share a unique name.
+ Every dataset in a GDG has a Generation number and version number. Eg.TESTGDG.DATA.G0001.V00 Subsequent files are named by incrementing the Generation number(G0001-G9999). The current generation is referred a 0. The next generation as +1 an previous generation as -1 Every time a new gen is created, it becomes the current gen and the current gen becomes the previous generation.</description>
+    </item>
+    
+    <item>
+      <title>கவிதைகள்-பகுதி 2</title>
+      <link>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D-%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-2/</link>
+      <pubDate>Fri, 03 Feb 2012 19:55:44 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D-%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ranking and Numbering for Records in DB2</title>
+      <link>http://purusothaman.me/ranking-and-numbering-for-records-in-db2/</link>
+      <pubDate>Mon, 23 Jan 2012 12:01:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/ranking-and-numbering-for-records-in-db2/</guid>
+      <description>DB2 supports ranking and numbering in much the same way that Oracle does.
+The available functions are:
+ ROW_NUMBER(), which simply numbers the returned rows sequentially &amp;lt;&amp;#47;li&amp;gt; RANK(), which ranks the results, but, in the case of a tie, gives the same number to each and leaves a gap to compensate &amp;lt;&amp;#47;li&amp;gt; DENSE_RANK() operates the same as RANK() but doesn&amp;rsquo;t leave any gaps.  Listing 1 - Ranking and Numbering Results</description>
+    </item>
+    
+    <item>
+      <title>Selecting first few rows in DB2</title>
+      <link>http://purusothaman.me/selecting-first-few-rows-in-db2/</link>
+      <pubDate>Mon, 23 Jan 2012 11:58:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/selecting-first-few-rows-in-db2/</guid>
+      <description>DB2&amp;rsquo;s method of performing a Top-N query is the FETCH FIRST clause. You can append these variations to a regular SELECT query:
+ FETCH FIRST ROW ONLY
+ FETCH FIRST 1 ROW ONLY FETCH FIRST integer ROWS ONLY  Interestingly, you can also use:
+ FETCH FIRST 1 ROWS ONLY FETCH FIRST 5 ROW ONLY  They aren&amp;rsquo;t as nice grammatically, but they make it easier to generate queries automatically - you don&amp;rsquo;t have to worry about whether to say ROW or ROWS.</description>
+    </item>
+    
+    <item>
+      <title>INSPECT in COBOL</title>
+      <link>http://purusothaman.me/inspect-in-cobol/</link>
+      <pubDate>Mon, 23 Jan 2012 10:40:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/inspect-in-cobol/</guid>
+      <description>The INSPECT verb has two options, TALLYING and REPLACING. You can do one or the other or both. If both are done, the TALLYING IS DONE BEFORE THE replacing. Some versions of the INSPECT require that all the literals be in quotes. This may call for a redefination if the field is numeric.
+In using the TALLYING format of the INSPECT, you are tallying into a field that is a counter.</description>
+    </item>
+    
+    <item>
+      <title>COBOL Numeric Data Types-COMP</title>
+      <link>http://purusothaman.me/cobol-numeric-data-types-comp/</link>
+      <pubDate>Mon, 23 Jan 2012 10:38:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/cobol-numeric-data-types-comp/</guid>
+      <description>The following common COBOL data types are discussed below:
+ Binary Computational (comp) Comp-1 Comp-2 Comp-3 Packed Decimal  **BINARY **
+Specified for binary data items. Such items have a decimal equivalent consisting of the decimal digits 0 through 9, plus a sign. Negative numbers are represented as the two’s complement of the positive number with the same absolute value. The amount of storage occupied by a binary item depends on the number of decimal digits defined in its PICTURE clause:</description>
+    </item>
+    
+    <item>
+      <title>ISPF Special Searching</title>
+      <link>http://purusothaman.me/ispf-special-searching/</link>
+      <pubDate>Mon, 23 Jan 2012 06:30:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/ispf-special-searching/</guid>
+      <description>A picture string in a FIND, CHANGE, or EXCLUDE command allows you to search for a particular kind of character without regard for the specific character involved.
+You can use special characters within the picture string to represent the kind of character to be found, as follows:
+They can be used in REXX ISREDIT macros too.
+   String Meaning     P&amp;rsquo;=&amp;rsquo; Any character   P&amp;rsquo;&amp;not;&amp;lsquo; Any character that is not a blank   P&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>TIME=NOLIMIT and TIME=MAXIMUM</title>
+      <link>http://purusothaman.me/timenolimit-and-timemaximum/</link>
+      <pubDate>Mon, 23 Jan 2012 06:16:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/timenolimit-and-timemaximum/</guid>
+      <description>We can specify the max limit of TIME parameter as
+TIME=NOLIMIT
+TIME=MAXIMUM
+Now which specification gives maximum time for a JOB?
+TIME=MAXIMUM will allow the job to run for 357912 minutes (248.55 days)
+TIME=NOLIMIT will allow the job for unlimited amount of time
+Another advantage of NOLIMIT option is that it can remain in wait status for more than the installation time limit.</description>
+    </item>
+    
+    <item>
+      <title>Run a step only from a set of steps in a job</title>
+      <link>http://purusothaman.me/run-a-step-only-from-a-set-of-steps-in-a-job/</link>
+      <pubDate>Mon, 23 Jan 2012 06:12:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/run-a-step-only-from-a-set-of-steps-in-a-job/</guid>
+      <description>I have a JCL with 20 steps. Due to some reasons I want to execute the step 15 only.
+One way to do it is to use RESTART from STEP15, but it will try to execute the subsequent steps too. We have to insert null statement after step15 to prevent the execution of subsequent steps.
+But one decent way is there in which we don&amp;rsquo;t need to touch the job steps code, but alter only the Jobcard.</description>
+    </item>
+    
+    <item>
+      <title>DB2 Index with Expressions</title>
+      <link>http://purusothaman.me/db2-index-with-expressions/</link>
+      <pubDate>Mon, 23 Jan 2012 06:09:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/db2-index-with-expressions/</guid>
+      <description>Prior to DB2 9, the create index statement only allowed you to use the column name from the table the index is being built on. The same value for each column stored on the table was copied into the index and used to quickly identify the row when searching by that column name. Now with DB2 9, the create index statement supports a feature known as key expressions. Here’s why key expressions should interest you.</description>
+    </item>
+    
+    <item>
+      <title>Run a Program using Referback</title>
+      <link>http://purusothaman.me/run-a-program-using-referback/</link>
+      <pubDate>Mon, 23 Jan 2012 06:02:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/run-a-program-using-referback/</guid>
+      <description>It is possible to execute a program from any library using the referback feature.
+STEP1 EXEC PGM=IEFBR14 //PROGRAM DD DSN=SYSTEM.PGM.LOADLIB(COBOLPGM),DISP=SHR . . . . . //STEP2 EXEC PGM=*.STEP1.PROGRAM  </description>
+    </item>
+    
+    <item>
+      <title>Like the DB2 LIKE</title>
+      <link>http://purusothaman.me/like-the-db2-like/</link>
+      <pubDate>Fri, 20 Jan 2012 10:46:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/like-the-db2-like/</guid>
+      <description>The LIKE phrase defines a mask for comparing characters:
+WHERE COL_VAL [NOT] LIKE mask  A mask may be a host variable or a literal enclosed in quotes and may contain any number of:
+   Mask What to Find?     character literal for an exact match   underscore character for any single character   percent sign character for any sequence of characters of length 0 or more    For example:</description>
+    </item>
+    
+    <item>
+      <title>Handling NULL in DB2</title>
+      <link>http://purusothaman.me/handling-null-in-db2/</link>
+      <pubDate>Fri, 20 Jan 2012 10:43:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/handling-null-in-db2/</guid>
+      <description>The value of an indicator variable tells the status of a row after a query.
+Host Variable:
+01 FILLER. 05 WS-AMOUNT PIC S9(5)V9(2) COMP-3. 05 WS-CUSTNUM PIC X(5).  Indicator variable:
+01 FILLER. 05 AMT-IND PIC S9(4) COMP.  Consider the below SQL.
+EXEC SQL SELECT CUST_AMOUNT INTO :WS-AMOUNT:AMT-IND FROM T100.CUST WHERE CUST_ID = :WS-CUSTNUM END-EXEC.  After a query, the indicator variable contains the following:
+ 0 - Column is not null -1 - Column is null -2 - Column is null as result of conversion error +length - Full length of column that was truncated to fit a short host variable  Some points to ponder:</description>
+    </item>
+    
+    <item>
+      <title>Isolation level in DB2</title>
+      <link>http://purusothaman.me/isolation-level-in-db2/</link>
+      <pubDate>Fri, 20 Jan 2012 10:40:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/isolation-level-in-db2/</guid>
+      <description>The list of isoloation leves are listed below.
+ SERIALIZABLE(Repeatable read (RR)) REPEATABLE READ(Read stability (RS)) READ COMMITTED(Cursor stability (CS)) (default) READ UNCOMMITTED(Uncommitted read (UR))  SERIALIZABLE (DB2 UDB: Repeatable Read)
+Locks the table within a unit of work. An application can retrieve and operate on rows in the table as many times as needed. However, the entire table is locked, not just the rows that are retrieved. Until the unit of work completes, no other application can update, delete, or insert a row that would affect the table.</description>
+    </item>
+    
+    <item>
+      <title>Freezing columns in File-Aid</title>
+      <link>http://purusothaman.me/freezing-columns-in-file-aid/</link>
+      <pubDate>Fri, 20 Jan 2012 10:38:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/freezing-columns-in-file-aid/</guid>
+      <description>While working in MS Excel we have the option of &amp;ldquo;Freeze Panes&amp;rdquo;. By this options we can freeze some columns and have other columns scrolling. This feature is helpful in analysis when there are lots of columns(fields) in a file.
+In mainframe too, we have similar such facility thru File-Aid.
+ Open the file in File-Aid Use VFMT format If you want to freeze columns(fields) 1,2,3, and 6 and have the rest as scrollable issue the below command.</description>
+    </item>
+    
+    <item>
+      <title>VSAM record count using File-Aid</title>
+      <link>http://purusothaman.me/vsam-record-count-using-file-aid/</link>
+      <pubDate>Fri, 20 Jan 2012 10:36:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/vsam-record-count-using-file-aid/</guid>
+      <description>Whats the best way to count the number of records in a VSAM File?
+ Choose FILE-AID Option 3.8. At the prompt of &amp;hellip;.ENTER NEXT FUNCTION OR END , enter TALLY. You will get the record count. Type END to exit.  </description>
+    </item>
+    
+    <item>
+      <title>Read Only VSM Files</title>
+      <link>http://purusothaman.me/read-only-vsm-files/</link>
+      <pubDate>Fri, 20 Jan 2012 10:32:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/read-only-vsm-files/</guid>
+      <description>By using INHIBIT along with ALTER command, we can have a read-only VSAM dataset.
+Example:
+//STEP1 EXEC PGM=IDCAMS //SYSPRINT DD SYSOUT=* //SYSIN DD * ALTER – SECRET.KSDS.DATA – INHIBIT ALTER – SECRET.KSDS.INDEX – INHIBIT /*  Notice that the ALTER command is used with DATA and INDEX and not with the cluster.</description>
+    </item>
+    
+    <item>
+      <title>Dummy VSM Dataset in JCL</title>
+      <link>http://purusothaman.me/dummy-vsm-dataset-in-jcl/</link>
+      <pubDate>Fri, 20 Jan 2012 10:28:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/dummy-vsm-dataset-in-jcl/</guid>
+      <description>In general we use DUMMY datasets in JCL instead of a actual file for some requirements.
+But how can we specify dummy VSAM dataset in a JCL?
+The parameter AMP=&amp;lsquo;AMORG&amp;rsquo; tells the OS to treat the file as VSAM file.
+ //NOVSAMIO DD DUMMY,AMP=&amp;lsquo;AMORG&amp;rsquo;
+ </description>
+    </item>
+    
+    <item>
+      <title>TSQ Vs. TDQ</title>
+      <link>http://purusothaman.me/tsq-vs.-tdq/</link>
+      <pubDate>Fri, 20 Jan 2012 10:19:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/tsq-vs.-tdq/</guid>
+      <description>In Temporary Storage Queues Data is read randomly, while in Transient Data Queues data must be read sequentially. In a TSQ data can be read any number of times as it remains in the queue until the entire Queue is deleted. In TDQ data item can be read once only. To reuse the TDQ it must be closed and reopened. Data can be changed in TSQ, but not in TDQ.</description>
+    </item>
+    
+    <item>
+      <title>Find bad data using File-Aid</title>
+      <link>http://purusothaman.me/find-bad-data-using-file-aid/</link>
+      <pubDate>Fri, 20 Jan 2012 10:14:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/find-bad-data-using-file-aid/</guid>
+      <description>The Easiest and Coolest way to locate bad data is thru File-Aid&amp;rsquo;s FIND command.
+ OPEN the file in FILE-AID (in either browse or edit mode). XREF with COPYBOOK. Use FMT mode. Then issue the below command.   F /field-name INVALID
+ or
+ F /field-number INVALID
+ The control will take you to the first invalid data record for the given field.
+Example: The FILE has 3 fields namely NAME,AGE,COUNTRY.</description>
+    </item>
+    
+    <item>
+      <title>Points to Ponder on DB2 NULL</title>
+      <link>http://purusothaman.me/points-to-ponder-on-db2-null/</link>
+      <pubDate>Thu, 19 Jan 2012 21:40:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/points-to-ponder-on-db2-null/</guid>
+      <description>NULLs can present problems because they are handled differently by different computers and the collating sequence is inconsistent with regard to NULLs. Unless you specify NOT NULL, the default is to allow for NULLs. It&amp;rsquo;s easy for us to get lazy and allow columns to contain NULLs when it would be better to specify NOT NULL. Allowing for NULLs will create UNKNOWN logical values. Always test your code with NULLs in all possible places.</description>
+    </item>
+    
+    <item>
+      <title>Explanation on DB2 Explain</title>
+      <link>http://purusothaman.me/explanation-on-db2-explain/</link>
+      <pubDate>Thu, 19 Jan 2012 21:29:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/explanation-on-db2-explain/</guid>
+      <description>When an SQL is executed against or bound to a DB2 database, DB2 Optimizer tool defines the access path used to access the data. This access path is defined according to tables’ statistics generated by DB2 Runstats tool.
+The Explain command details the access path defined by DB2 and allows you to analyze how the data will be accessed and how you can improve the command’s performance.
+A table called PLAN_TABLE which has your user id as its owner is required for working on DB2 Explain.</description>
+    </item>
+    
+    <item>
+      <title>Appending to ISPF Clipboard</title>
+      <link>http://purusothaman.me/appending-to-ispf-clipboard/</link>
+      <pubDate>Thu, 19 Jan 2012 21:02:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/appending-to-ispf-clipboard/</guid>
+      <description>Scenario: I have a dataset with 10,000 lines. I want to cut the first 10 lines and last 10 lines and paste into another dataset. When I cut the first 10 lines and then again the last 10 lines, only the last 10 lines are pasted into the new dataset.
+
+Is there anyway out (other than doing a 2 cut &amp;amp; paste)?
+
+Yes, here it is.
+ First cut 10 lines, then issue CUT APPEND.</description>
+    </item>
+    
+    <item>
+      <title>Viewing Mainframe ISPF Clipboard</title>
+      <link>http://purusothaman.me/viewing-mainframe-ispf-clipboard/</link>
+      <pubDate>Thu, 19 Jan 2012 20:57:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/viewing-mainframe-ispf-clipboard/</guid>
+      <description>When I issue CUT , I know that the CUT content are placed in a clipboard. And when I issue PASTE, the clipboard content are pasted.
+But is it possible for me to view and edit the clipboard?
+One can view the clipboard after any valid CUT command was issued.
+To view the clipboard, issue :
+CUT DISPLAY  
+Clipboard manager will pop up and gives us options to edit or browse the content.</description>
+    </item>
+    
+    <item>
+      <title>Changing the Create or Update User ID in Mainframe</title>
+      <link>http://purusothaman.me/changing-the-create-or-update-user-id-in-mainframe/</link>
+      <pubDate>Thu, 19 Jan 2012 20:49:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/changing-the-create-or-update-user-id-in-mainframe/</guid>
+      <description>Usually the PDS or PS bears the ID of the creator or the ID of the person who modified it recently. It&amp;rsquo;s possible to change these ID values without leaving trace of one&amp;rsquo;s own ID.
+
+In the command area against the member name or PS name, by giving &amp;lsquo;G&amp;rsquo;.
+Dialog box will pop up allowing you to change the ID values.</description>
+    </item>
+    
+    <item>
+      <title>Repeating the ISPF command without typing again</title>
+      <link>http://purusothaman.me/repeating-the-ispf-command-without-typing-again/</link>
+      <pubDate>Thu, 19 Jan 2012 20:07:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/repeating-the-ispf-command-without-typing-again/</guid>
+      <description>Any command entered in the ISPF COMMAND LINE disappears after the successful execution of its intended function. If you want to repeat the same command , you got to re-type it or use some PF key to retrieve the last command entered.
+But here is a cool method the make the command entered not to disappear and stay on the screen.
+Precede commands with &amp;ldquo;&amp;amp;&amp;ldquo;.
+For Example:
+ &amp;amp;C &amp;lsquo;110-PARA&amp;rsquo; &amp;lsquo;220-PARA&amp;rsquo;</description>
+    </item>
+    
+    <item>
+      <title>Copy a Dataset using File-Aid</title>
+      <link>http://purusothaman.me/copy-a-dataset-using-file-aid/</link>
+      <pubDate>Wed, 18 Jan 2012 18:30:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/copy-a-dataset-using-file-aid/</guid>
+      <description>The steps to copy a file using File-Aid are :
+
+Go to TSO&amp;#47;ISPF
+Open fileaid giving command as per your shop&amp;rsquo;s configuration
+Once FileAid&amp;rsquo;s Primary Option Menu is opened
+Choose Utilities
+Choose Copy
+Give source PDS&amp;#47;dataset name (in FROM ) you might need to provide volume serial number if it is not cataloged.
+Give destination PDS&amp;#47;dataset name (in TO) you might need to provide volume serial number if it is not cataloged.</description>
+    </item>
+    
+    <item>
+      <title>Recently accessed Datasets in Mainframe</title>
+      <link>http://purusothaman.me/recently-accessed-datasets-in-mainframe/</link>
+      <pubDate>Wed, 18 Jan 2012 18:28:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/recently-accessed-datasets-in-mainframe/</guid>
+      <description>Here is the way to find the last 10 datasets that you have accessed.
+ GO TO ISPF 3.4 option. On the top, there is a MENUBAR. Select REFLIST Select Option 1 in it.  Using this option you can find out the last 30 datasets that you have accessed.</description>
+    </item>
+    
+    <item>
+      <title>Verification of DB2 Consistency token</title>
+      <link>http://purusothaman.me/verification-of-db2-consistency-token/</link>
+      <pubDate>Wed, 18 Jan 2012 18:10:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/verification-of-db2-consistency-token/</guid>
+      <description>When a Job abends at a program due to bind error with SQL code of -805 or -818 then generally there is issue with consistency token (often referred as CONTOKEN). These kind of abends can be easily fixed if we can find where the CONTOKEN mismatch occurs.
+STEP1:- CONTOKEN in Package
+RUN the following query:
+ SELECT NAME, CONTOKEN, COLLID, PDSNAME FROM SYSIBM.SYSPACKAGE WHERE NAME=&amp;lsquo;MODULE&amp;rsquo; AND COLLID=&amp;lsquo;COLLID&amp;rsquo;
+ Provide the name of the module in &amp;ldquo;NAME&amp;rdquo; and Collection name in &amp;ldquo;COLLID&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>COBOL Calendar and Date Functions</title>
+      <link>http://purusothaman.me/cobol-calendar-and-date-functions/</link>
+      <pubDate>Wed, 18 Jan 2012 17:49:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/cobol-calendar-and-date-functions/</guid>
+      <description>You need to know what date is 150 days from today (and this kind of stuff happens more often than you&amp;rsquo;d think)? Convert today to an integer date, add 150 to it and convert it back. No more checking which months you&amp;rsquo;re going through to see if it&amp;rsquo;s a 30 day or 31 day month. No more leap year calculations.
+Some sample COBOL Date Example:
+01 WS-TODAY PIC 9(8). 01 WS-FUTURE-DATE PIC 9(8).</description>
+    </item>
+    
+    <item>
+      <title>Filtering Jobs in Spool</title>
+      <link>http://purusothaman.me/filtering-jobs-in-spool/</link>
+      <pubDate>Wed, 18 Jan 2012 15:25:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/filtering-jobs-in-spool/</guid>
+      <description>There is a possibility to list only the jobs which has ABENDED, leaving out all other jobs in the spool.
+For such a kind of listing, use the primary command FILTER on the command line as given in the examples below.
+FIL MAX AB* - shows jobs that has ABENDS  Other Examples are:
+Shows jobs that has JCL errors:
+FIL MAX ‘JCL ERROR’  Shows jobs with “exceptional conditions”:</description>
+    </item>
+    
+    <item>
+      <title>Rearrage SDSF Columns</title>
+      <link>http://purusothaman.me/rearrage-sdsf-columns/</link>
+      <pubDate>Wed, 18 Jan 2012 15:22:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/rearrage-sdsf-columns/</guid>
+      <description>If you want to rearrange the columns in SDSF.
+ Go to SDSF;ST.
+ In command line type &amp;ldquo;arr ?&amp;rdquo;.
+ This will bring the complete list of SDSF column names.
+ You can move the columns using &amp;ldquo;/&amp;rdquo; and &amp;ldquo;//&amp;rdquo;.
+  One Column in the SDSF that we can bring to the front position is the MAX-RC (which usually is the last column in SDSF) which shows the completion code or the abend code of the job.</description>
+    </item>
+    
+    <item>
+      <title>Change uppercase to lowercase or lowercase to uppercase in Sort</title>
+      <link>http://purusothaman.me/change-uppercase-to-lowercase-or-lowercase-to-uppercase-in-sort/</link>
+      <pubDate>Wed, 18 Jan 2012 14:52:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/change-uppercase-to-lowercase-or-lowercase-to-uppercase-in-sort/</guid>
+      <description>Translation features of INREC, OUTREC and OUTFIL make it easy to change the case of characters in your fields.
+The TRAN=LTOU operand can be used to change lowercase EBCDIC letters (a-z) to uppercase EBCDIC letters (A-Z) anywhere in a field.
+The TRAN=UTOL operand can be used to change uppercase EBCDIC letters to lowercase EBCDIC letters anywhere in a field.
+You could change the case in the entire record as well or part of the record.</description>
+    </item>
+    
+    <item>
+      <title>Easy &amp; Fast Editing of PDS using File-Aid</title>
+      <link>http://purusothaman.me/easy--fast-editing-of-pds-using-file-aid/</link>
+      <pubDate>Wed, 18 Jan 2012 14:37:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/easy--fast-editing-of-pds-using-file-aid/</guid>
+      <description>Projects do testing of their code multiple times before they move their code to production. Once the test JCLs are created. From the second run, we need to just change few qualifiers of the DSN and dates in all the JCLs.
+The conventional method is enter each member of the JCL PDS and make the changes. If you are sure that you are gonna make common changes in all the members then go ahead and use the below technique.</description>
+    </item>
+    
+    <item>
+      <title>Add leading and trailing Characters in Sort</title>
+      <link>http://purusothaman.me/add-leading-and-trailing-characters-in-sort/</link>
+      <pubDate>Wed, 18 Jan 2012 12:50:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/add-leading-and-trailing-characters-in-sort/</guid>
+      <description>Lets assume that we have a sequential dataset with records as below:
+ONE TWO THREE FOUR FIVE  I want to reformat the records for output as follows:
+NUMBER &#39;ONE&#39; NUMBER &#39;TWO&#39; NUMBER &#39;THREE&#39; NUMBER &#39;FOUR&#39; NUMBER &#39;FIVE&#39;  You can do this quite easily with DFSORT&amp;rsquo;s JFY function as follows:
+ OPTION COPY
+INREC BUILD=(1,13,JFY=(SHIFT=LEFT,LEAD=C&amp;rsquo;NUMBER &amp;ldquo;&amp;lsquo;, TRAIL=C&amp;rdquo;&amp;ldquo;)
+ SHIFT=LEFT left-justifies the data. LEAD inserts the hard coded text NUMBER &amp;lsquo; before the value with no intervening blanks.</description>
+    </item>
+    
+    <item>
+      <title>கவிதைகள் - பகுதி 1</title>
+      <link>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-1/</link>
+      <pubDate>Mon, 02 Jan 2012 18:13:41 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/%E0%AE%95%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D---%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%BF-1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

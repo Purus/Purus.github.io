@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computers on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/computers/</link>
+    <description>Recent content in Computers on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Nov 2013 23:57:16 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/computers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Running Cron in Windows </title>
+      <link>http://purusothaman.me/running-cron-in-windows/</link>
+      <pubDate>Wed, 20 Nov 2013 23:57:16 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/running-cron-in-windows/</guid>
+      <description>We all would have heard of Cron jobs, if you are involved in website management, development or working on Linux/Unix machines.
+What&amp;rsquo;s a cron?
+ Cron is nothing but an demon job running in the background without any user intervention. It gets executed automatically based on the predefined time interval.
+ Generally cron jobs are used to perform some maintenance activities in the server. For example, if you run a very popular blog, you can use the cron job to send out a weekly mail to all the users about the new blog posts.</description>
+    </item>
+    
+    <item>
+      <title>Solution for Disk Drive Full error with USB Pen Drives</title>
+      <link>http://purusothaman.me/solution-for-disk-drive-full-error-with-usb-pen-drives/</link>
+      <pubDate>Fri, 25 Oct 2013 22:42:36 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/solution-for-disk-drive-full-error-with-usb-pen-drives/</guid>
+      <description>When you copy large files (greater than 3 GB) to your USB pen drive, it&amp;rsquo;s almost sure that you will get an error alerting that &amp;ldquo;Disk drive is full&amp;rdquo;. I am sure you will be surprised on seeing this error as your USB pen drive will have more than 10 GB available. I swear, I did got surprised. I confirmed that my USB drive has enough space.
+I spend some time on finding out why this happens.</description>
+    </item>
+    
+    <item>
+      <title>Monsta FTP - FileZilla like FTP software for browsers</title>
+      <link>http://purusothaman.me/monsta-ftp---filezilla-like-ftp-software-for-browsers/</link>
+      <pubDate>Wed, 04 Sep 2013 18:38:03 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/monsta-ftp---filezilla-like-ftp-software-for-browsers/</guid>
+      <description>You would have came across a FTP application like FileZilla or WinSCP which you have used to access a FTP server. These are Windows based and you need to install them on your desktop if you want to use them.
+As a developer I commonly come across some situations where I need to access a FTP server but not in the position to use the FileZilla or install it. And again I was today in that situation and did a small research to find an alternative approach.</description>
+    </item>
+    
+    <item>
+      <title>Paris Desktop Wallpaper (HD)</title>
+      <link>http://purusothaman.me/paris-desktop-wallpaper-hd/</link>
+      <pubDate>Sun, 30 Jun 2013 10:12:23 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/paris-desktop-wallpaper-hd/</guid>
+      <description>Download 7 high quality wallpapers for your computer. The image might load little slow as the size of each image is 3MB. You can save those images for your local copy.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/machine-learning/</link>
+    <description>Recent content in Machine Learning on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 May 2017 23:29:33 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linear Regression for Machine Learning</title>
+      <link>http://purusothaman.me/linear-regression-for-machine-learning/</link>
+      <pubDate>Sat, 20 May 2017 23:29:33 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/linear-regression-for-machine-learning/</guid>
+      <description>Introduction Linear Regression is one of the basic concept used in Machine Learning. Do not think it&amp;rsquo;s complex as it&amp;rsquo;s related to Machine Learning. You have studied linear regression and even used without knowing it all your life.
+Linear regression is a simple statistics technique that predicts the value of an output variable(response) based on one or more input input(predictor) variables. At the end of performing linear regression we will have a linear relationship (a mathematical formula) between the input variable(s) and the response variable.</description>
+    </item>
+    
+  </channel>
+</rss>

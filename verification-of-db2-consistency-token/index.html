@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta property="og:title" content="Verification of DB2 Consistency token">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2012-01-18">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="http://purusothaman.me/verification-of-db2-consistency-token/">
+    <meta property="og:site_name" content="Purusothaman Ramanujam">
+    
+    <meta name="generator" content="Hugo 0.21" />
+    <title>Verification of DB2 Consistency token &middot; Purusothaman Ramanujam</title>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="http://purusothaman.me/css/style.css">
+    
+    <link href="http://purusothaman.me/index.xml" rel="alternate" type="application/rss+xml" title="Purusothaman Ramanujam" />
+    
+    
+    <link rel="icon" href="http://purusothaman.me/favicon.ico" />
+    
+
+    
+    
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="http://purusothaman.me/">Purusothaman Ramanujam</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+		
+			<h1 class="text-center"><a href="http://purusothaman.me/">Purusothaman Ramanujam</a></h1>
+		
+		
+		
+			<small class="text-center center-block">My Personal Flavour</small>
+		
+		
+		
+			<img id="profile-pic" src="http://purusothaman.me//img/avatar.jpg" alt="My Picture" class="img-circle center-block">
+		
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/purus"><i class="fa fa-github fa-2x"></i></a>
+			
+
+			<a href="mailto:purushoth.r@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+		<div id="links" class="text-center">
+			
+			
+		</div>
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+<main>
+	<header>
+		<h1>Verification of DB2 Consistency token</h1>
+	</header>
+
+	<article>
+		<p>When a Job abends at a program due to bind error with SQL code of -805 or -818 then generally there is issue with consistency token (often referred as CONTOKEN). These kind of abends can be easily fixed if we can find where the CONTOKEN mismatch occurs.</p>
+
+<p><strong>STEP1</strong>:- CONTOKEN in Package</p>
+
+<p>RUN the following query:</p>
+
+<blockquote>
+<p>SELECT NAME, CONTOKEN, COLLID, PDSNAME FROM SYSIBM.SYSPACKAGE
+WHERE NAME=&lsquo;MODULE&rsquo;
+AND COLLID=&lsquo;COLLID&rsquo;</p>
+</blockquote>
+
+<p>Provide the name of the module in &ldquo;<em>NAME</em>&rdquo; and Collection name in &ldquo;<em>COLLID</em>&rdquo;.</p>
+
+<p>In the Query output dataset locate the CONTOKEN value and view it in HEX mode (by issuing HEX ON command)</p>
+
+<p>Lets assume the HEX contoken in the above example to be as:</p>
+
+<blockquote>
+<p>1DE6102A
+8A19F405</p>
+</blockquote>
+
+<p>which is to be read as:
+&gt; 18DAE1691F0420A5</p>
+
+<p><strong>STEP2</strong>:- CONTOKEN in DBRMLIB</p>
+
+<p>The &ldquo;PDSNAME&rdquo; field above will indicate the DBRMLIB used for binding the module.</p>
+
+<ul>
+<li>Goto the DBRMLIB</li>
+<li>Open the DBRM for the above module, it will have the same name as the module name.</li>
+<li>Search for the contoken in hex mode by entering the following command</li>
+</ul>
+
+<blockquote>
+<p>F X&rsquo;18DAE1691F0420A5&rsquo;</p>
+</blockquote>
+
+<p><img alt="CONTOKEN IN DBRM IN DBRMLIB" src="/uploads/contoken2.JPG"></p>
+
+<p>(The CONTOKEN in the DBRM is generally at the 25th position as shown in the figure above)</p>
+
+<blockquote>
+<p><strong>Note:-</strong>
+    If the CONTOKEN in Step1 and Step2 does not match then Run the Bind job to fix the inconsistency. Bind Job is going  to update the CONTOKEN in the SYSIBM.SYSPACKAGE Table.</p>
+</blockquote>
+
+<p><strong>STEP3</strong>:- CONTOKEN in loadlib</p>
+
+<p>Since the date and time part of the CONTOKEN are swapped in loadlib, you will have to split the CONTOKEN found in SYSPACKAGE table in two halves of 8 chars each and then swap their positions.</p>
+
+<p>First Half
+&gt;18DAE169</p>
+
+<p>Second Half
+&gt;1F0420A5</p>
+
+<p>Swapping positions and joining them back will result in the CONTOKEN</p>
+
+<blockquote>
+<p>1F0420A518DAE169</p>
+</blockquote>
+
+<ul>
+<li><p>Go to the load library where the load to be checked is present. CONTOKEN in Composite load of the link.</p></li>
+
+<li><p>Open the load object for the program, it generally has the same name as the module name.</p></li>
+
+<li><p>Now search for the reversed CONTOKEN in hex mode in the load of the program using command.</p></li>
+</ul>
+
+<blockquote>
+<p>F X&rsquo;1F0420A518DAE169&rsquo;</p>
+</blockquote>
+
+<p>&lt;img alt=&ldquo;CONTOKEN in load object in LOADLIB&rdquo; src=&ldquo;/uploads/contoken3.jpg&rdquo;</p>
+
+<p>Note:- If the CONTOKEN is found then its fine and if not then you will need to recompile and also relink(if composite load also doesnt has this) to fix the issue.</p>
+
+<p><strong>Source</strong>: Mainframe Wizard</p>
+
+	</article>
+</main>
+
+<div id="bottom-nav" class="text-center center-block">
+	<a href=" http://purusothaman.me/" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
+</div>
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'purusothaman-ramanujam';
+    var disqus_identifier = 'http:\/\/purusothaman.me\/verification-of-db2-consistency-token\/';
+    var disqus_title = 'Verification of DB2 Consistency token';
+    var disqus_url = 'http:\/\/purusothaman.me\/verification-of-db2-consistency-token\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42031335-1', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "http:\/\/purusothaman.me\/";
+  </script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="http://purusothaman.me//js/App.js"></script>
+  
+</body>
+</html>

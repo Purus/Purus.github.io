@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>File Aid on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/file-aid/</link>
+    <description>Recent content in File Aid on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Jan 2012 10:38:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/file-aid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Freezing columns in File-Aid</title>
+      <link>http://purusothaman.me/freezing-columns-in-file-aid/</link>
+      <pubDate>Fri, 20 Jan 2012 10:38:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/freezing-columns-in-file-aid/</guid>
+      <description>While working in MS Excel we have the option of &amp;ldquo;Freeze Panes&amp;rdquo;. By this options we can freeze some columns and have other columns scrolling. This feature is helpful in analysis when there are lots of columns(fields) in a file.
+In mainframe too, we have similar such facility thru File-Aid.
+ Open the file in File-Aid Use VFMT format If you want to freeze columns(fields) 1,2,3, and 6 and have the rest as scrollable issue the below command.</description>
+    </item>
+    
+    <item>
+      <title>VSAM record count using File-Aid</title>
+      <link>http://purusothaman.me/vsam-record-count-using-file-aid/</link>
+      <pubDate>Fri, 20 Jan 2012 10:36:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/vsam-record-count-using-file-aid/</guid>
+      <description>Whats the best way to count the number of records in a VSAM File?
+ Choose FILE-AID Option 3.8. At the prompt of &amp;hellip;.ENTER NEXT FUNCTION OR END , enter TALLY. You will get the record count. Type END to exit.  </description>
+    </item>
+    
+    <item>
+      <title>Find bad data using File-Aid</title>
+      <link>http://purusothaman.me/find-bad-data-using-file-aid/</link>
+      <pubDate>Fri, 20 Jan 2012 10:14:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/find-bad-data-using-file-aid/</guid>
+      <description>The Easiest and Coolest way to locate bad data is thru File-Aid&amp;rsquo;s FIND command.
+ OPEN the file in FILE-AID (in either browse or edit mode). XREF with COPYBOOK. Use FMT mode. Then issue the below command.   F /field-name INVALID
+ or
+ F /field-number INVALID
+ The control will take you to the first invalid data record for the given field.
+Example: The FILE has 3 fields namely NAME,AGE,COUNTRY.</description>
+    </item>
+    
+    <item>
+      <title>Copy a Dataset using File-Aid</title>
+      <link>http://purusothaman.me/copy-a-dataset-using-file-aid/</link>
+      <pubDate>Wed, 18 Jan 2012 18:30:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/copy-a-dataset-using-file-aid/</guid>
+      <description>The steps to copy a file using File-Aid are :
+
+Go to TSO&amp;#47;ISPF
+Open fileaid giving command as per your shop&amp;rsquo;s configuration
+Once FileAid&amp;rsquo;s Primary Option Menu is opened
+Choose Utilities
+Choose Copy
+Give source PDS&amp;#47;dataset name (in FROM ) you might need to provide volume serial number if it is not cataloged.
+Give destination PDS&amp;#47;dataset name (in TO) you might need to provide volume serial number if it is not cataloged.</description>
+    </item>
+    
+    <item>
+      <title>Easy &amp; Fast Editing of PDS using File-Aid</title>
+      <link>http://purusothaman.me/easy--fast-editing-of-pds-using-file-aid/</link>
+      <pubDate>Wed, 18 Jan 2012 14:37:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/easy--fast-editing-of-pds-using-file-aid/</guid>
+      <description>Projects do testing of their code multiple times before they move their code to production. Once the test JCLs are created. From the second run, we need to just change few qualifiers of the DSN and dates in all the JCLs.
+The conventional method is enter each member of the JCL PDS and make the changes. If you are sure that you are gonna make common changes in all the members then go ahead and use the below technique.</description>
+    </item>
+    
+  </channel>
+</rss>

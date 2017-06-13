@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta property="og:title" content="INSPECT in COBOL">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2012-01-23">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="http://purusothaman.me/inspect-in-cobol/">
+    <meta property="og:site_name" content="Purusothaman Ramanujam">
+    
+    <meta name="generator" content="Hugo 0.21" />
+    <title>INSPECT in COBOL &middot; Purusothaman Ramanujam</title>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="http://purusothaman.me/css/style.css">
+    
+    <link href="http://purusothaman.me/index.xml" rel="alternate" type="application/rss+xml" title="Purusothaman Ramanujam" />
+    
+    
+    <link rel="icon" href="http://purusothaman.me/favicon.ico" />
+    
+
+    
+    
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="http://purusothaman.me/">Purusothaman Ramanujam</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+		
+			<h1 class="text-center"><a href="http://purusothaman.me/">Purusothaman Ramanujam</a></h1>
+		
+		
+		
+			<small class="text-center center-block">My Personal Flavour</small>
+		
+		
+		
+			<img id="profile-pic" src="http://purusothaman.me//img/avatar.jpg" alt="My Picture" class="img-circle center-block">
+		
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/purus"><i class="fa fa-github fa-2x"></i></a>
+			
+
+			<a href="mailto:purushoth.r@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+		<div id="links" class="text-center">
+			
+			
+		</div>
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+<main>
+	<header>
+		<h1>INSPECT in COBOL</h1>
+	</header>
+
+	<article>
+		<p>The INSPECT verb has two options, TALLYING and REPLACING. You can do  one or the other or both. If both are done, the TALLYING IS DONE BEFORE  THE replacing. Some versions of the INSPECT require that all the  literals be in quotes. This may call for a redefination if the field is  numeric.</p>
+
+<p>In using the TALLYING format of the INSPECT, you are tallying into a  field that is a counter. This field must be initialized to 0 before the  inspect is done. Unsually this is done by a MOVE 0 to whatever the  counter is called.</p>
+
+<p>The TALLYING option of the INSPECT has multiple options - in fact, some  versions have options beyond those required by the COBOL specifications:</p>
+
+<ul>
+<li>You can tally ALL of something</li>
+<li>You can tally just the LEADING occurances of something</li>
+<li>You can just tally CHARACTERS</li>
+<li>You can tally BEFORE or AFTER an INITIAL specified character</li>
+</ul>
+
+<p><strong>Example #1</strong>:</p>
+
+<p>This statement counts the number of occurrences of the digit 5 until the first space is encountered. If FLDA = &ldquo;256545 67&rdquo; then after the INSPECT, CTRA would equal 3.</p>
+
+<pre><code>MOVE 0 TO CTRA.
+NSPECT FLDA TALLY CTRA 
+   FOR ALL &quot;5&quot; BEFORE INTIAL SPACE.
+</code></pre>
+
+<p><strong>Example #2</strong>:</p>
+
+<p>This statement counts the number of spaces in the field FLDB. If FLB = &ldquo;4 5 6 1 2&rdquo; then after the INSPECT, CTRB would equal 4 since there is a space between each number.</p>
+
+<pre><code>MOVE 0 TO CTRB.
+INSPECT FLDB TALLYING CTRB&lt;
+   FOR ALL SPACES.
+</code></pre>
+
+<p><strong>Example #3</strong>:
+In this example, the count of all characters before the first space is tallied. If FLDC is equal to 16AB5 6 then CTRC will contain the number 5 since 1, 6, A, B, and 5 proceed the space before the 6.</p>
+
+<pre><code>MOVE 0 TO CTRC.
+INSPECT FLDC TALLYING CTRC
+    FOR CHARACTERS BEFORE INITIAL SPACE.
+</code></pre>
+
+<p><strong>Example #4</strong>:
+This statement counts all of the leading zeros in a field. Embedded or trailing zeros are counted. IF FLDD is equal to 00090020, then CTRD is equal to 3.</p>
+
+<pre><code>MOVE 0 TO CTRD.
+INSPECT FLDD TALLYING CTRD
+    FOR LEADING ZEROS.
+</code></pre>
+
+<p><strong>Example #5</strong>: This statement counts all zeros in the field. IF FLDE is equal to 00090020, then CTRE will be equal to 6.</p>
+
+<pre><code>MOVE 0 TO CTRE.
+INSPECT FLDE TALLYING CTRE
+    FOR ALL ZEROS.
+</code></pre>
+
+<p><strong>Example #6</strong>: This statement tallies for all zeroes that proceed the initial 2 In this case, CTRF will be 5. FLDF is equal to 00090020.</p>
+
+<pre><code>INSPECT FLDF TALLYING CTRF
+    FOR ALL ZEROS BEFORE INITIAL 2.
+</code></pre>
+
+<p><strong>Example #7</strong>: This statement counts the spaces before the number 5. In this example CTRG will be 3. FLDG has three spaces and then the number 1257 ( 1257).</p>
+
+<pre><code>INSPECT FLDG TALLYING CTRG
+    FOR LEADING SPACE BEFORE INITIAL 5.
+</code></pre>
+
+<p><strong>Example #8</strong>: This statement will replace all B with G. FLDH will start as ABCBDFB and will become AGCGDFG.</p>
+
+<pre><code>INSPECT FLDH REPLACING ALL “B” BY “G”.
+</code></pre>
+
+<p><strong>Example #9</strong>: This replace will change all A to X. This means that AAABBAAA will become XXXBBAAA.</p>
+
+<pre><code>INSPECT FLDI REPLACING CHARACTERS BY “X” 
+    BEFORE INITIAL “B”.
+</code></pre>
+
+<p><strong>Example #10</strong>: This will replace the first X with a 5. There ACXDGXB will become AC5DGXB.</p>
+
+<pre><code>INSPECT FLDJ REPLACING FIRST “X” BY “5”.
+</code></pre>
+
+	</article>
+</main>
+
+<div id="bottom-nav" class="text-center center-block">
+	<a href=" http://purusothaman.me/" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
+</div>
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'purusothaman-ramanujam';
+    var disqus_identifier = 'http:\/\/purusothaman.me\/inspect-in-cobol\/';
+    var disqus_title = 'INSPECT in COBOL';
+    var disqus_url = 'http:\/\/purusothaman.me\/inspect-in-cobol\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42031335-1', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "http:\/\/purusothaman.me\/";
+  </script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="http://purusothaman.me//js/App.js"></script>
+  
+</body>
+</html>

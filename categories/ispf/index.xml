@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ispf on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/ispf/</link>
+    <description>Recent content in Ispf on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Mar 2012 08:59:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/ispf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recovering Deleted Flat Files in Mainframe</title>
+      <link>http://purusothaman.me/recovering-deleted-flat-files-in-mainframe/</link>
+      <pubDate>Wed, 21 Mar 2012 08:59:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/recovering-deleted-flat-files-in-mainframe/</guid>
+      <description>Flat files can be recovered by following the below mentioned steps.
+ Start 6 HLIST BCDS DSN(&amp;lsquo;filename&amp;rsquo;) Wait for the system notification Type the command HRECOVER &amp;lsquo;filename&amp;rsquo; and wait for system notification  Different variations of HRECOVER are given below.
+ HRECOVER &amp;lsquo;filename&amp;rsquo; : recovers with same name. HRECOVER &amp;lsquo;old filename&amp;rsquo; NEW (&amp;lsquo;new filename&amp;rsquo;) : recovers and assigns new name. HRECOVER &amp;lsquo;file name&amp;rsquo; REPLACE : recovers replacing a file with same name.</description>
+    </item>
+    
+    <item>
+      <title>AUTOTYPE Suggestion</title>
+      <link>http://purusothaman.me/autotype-suggestion/</link>
+      <pubDate>Wed, 21 Mar 2012 08:49:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/autotype-suggestion/</guid>
+      <description>How wonderful it feels when Internet explorer suggests names for URLs when we start typing the first few letters!
+Our mainframe also has the ability to do pretty much the same. Using KEYS command on the command line, assign a free PF key with the value AUTOTYPE. We are all set.
+
+Now use 3.4 to go to the Data Set list utility and then type the first few qualifier of the required data set.</description>
+    </item>
+    
+    <item>
+      <title>ISPF Special Searching</title>
+      <link>http://purusothaman.me/ispf-special-searching/</link>
+      <pubDate>Mon, 23 Jan 2012 06:30:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/ispf-special-searching/</guid>
+      <description>A picture string in a FIND, CHANGE, or EXCLUDE command allows you to search for a particular kind of character without regard for the specific character involved.
+You can use special characters within the picture string to represent the kind of character to be found, as follows:
+They can be used in REXX ISREDIT macros too.
+   String Meaning     P&amp;rsquo;=&amp;rsquo; Any character   P&amp;rsquo;&amp;not;&amp;lsquo; Any character that is not a blank   P&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>Appending to ISPF Clipboard</title>
+      <link>http://purusothaman.me/appending-to-ispf-clipboard/</link>
+      <pubDate>Thu, 19 Jan 2012 21:02:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/appending-to-ispf-clipboard/</guid>
+      <description>Scenario: I have a dataset with 10,000 lines. I want to cut the first 10 lines and last 10 lines and paste into another dataset. When I cut the first 10 lines and then again the last 10 lines, only the last 10 lines are pasted into the new dataset.
+
+Is there anyway out (other than doing a 2 cut &amp;amp; paste)?
+
+Yes, here it is.
+ First cut 10 lines, then issue CUT APPEND.</description>
+    </item>
+    
+    <item>
+      <title>Viewing Mainframe ISPF Clipboard</title>
+      <link>http://purusothaman.me/viewing-mainframe-ispf-clipboard/</link>
+      <pubDate>Thu, 19 Jan 2012 20:57:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/viewing-mainframe-ispf-clipboard/</guid>
+      <description>When I issue CUT , I know that the CUT content are placed in a clipboard. And when I issue PASTE, the clipboard content are pasted.
+But is it possible for me to view and edit the clipboard?
+One can view the clipboard after any valid CUT command was issued.
+To view the clipboard, issue :
+CUT DISPLAY  
+Clipboard manager will pop up and gives us options to edit or browse the content.</description>
+    </item>
+    
+    <item>
+      <title>Repeating the ISPF command without typing again</title>
+      <link>http://purusothaman.me/repeating-the-ispf-command-without-typing-again/</link>
+      <pubDate>Thu, 19 Jan 2012 20:07:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/repeating-the-ispf-command-without-typing-again/</guid>
+      <description>Any command entered in the ISPF COMMAND LINE disappears after the successful execution of its intended function. If you want to repeat the same command , you got to re-type it or use some PF key to retrieve the last command entered.
+But here is a cool method the make the command entered not to disappear and stay on the screen.
+Precede commands with &amp;ldquo;&amp;amp;&amp;ldquo;.
+For Example:
+ &amp;amp;C &amp;lsquo;110-PARA&amp;rsquo; &amp;lsquo;220-PARA&amp;rsquo;</description>
+    </item>
+    
+    <item>
+      <title>Recently accessed Datasets in Mainframe</title>
+      <link>http://purusothaman.me/recently-accessed-datasets-in-mainframe/</link>
+      <pubDate>Wed, 18 Jan 2012 18:28:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/recently-accessed-datasets-in-mainframe/</guid>
+      <description>Here is the way to find the last 10 datasets that you have accessed.
+ GO TO ISPF 3.4 option. On the top, there is a MENUBAR. Select REFLIST Select Option 1 in it.  Using this option you can find out the last 30 datasets that you have accessed.</description>
+    </item>
+    
+  </channel>
+</rss>

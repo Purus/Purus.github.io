@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cobol on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/cobol/</link>
+    <description>Recent content in Cobol on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Apr 2012 10:08:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/cobol/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>COBOL Code Optimization</title>
+      <link>http://purusothaman.me/cobol-code-optimization/</link>
+      <pubDate>Fri, 27 Apr 2012 10:08:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/cobol-code-optimization/</guid>
+      <description>To assist in the optimization of the code, you should use the OPTIMIZE compiler option. With the OPTIMIZE(STD) or OPTIMIZE(FULL) options in effect, you may receive optimizations that include:
+ eliminating unnecessary branches simplifying inefficient branches simplifying the code for the out-of-line PERFORM statement, moving the performed paragraphs in-line,where possible simplifying the code for a CALL to a contained (nested) program, moving the called statements in-line,where possible eliminating duplicate computations eliminating constant computations aggregating moves of contiguous, equal-sized items into a single move deleting unreachable code  Additionally, with the OPTIMIZE(FULL) option in effect, you may also receive these optimizations:</description>
+    </item>
+    
+    <item>
+      <title>ARITH Compiler Option in COBOL</title>
+      <link>http://purusothaman.me/arith-compiler-option-in-cobol/</link>
+      <pubDate>Thu, 26 Apr 2012 09:08:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/arith-compiler-option-in-cobol/</guid>
+      <description>ARITH affects the maximum number of digits that you can code for integers, and the number of digits used in fixed-point intermediate results. By specifying ARITH complier option we can control the maximum number of digits allowed for decimal numbers (packed decimal, zoned decimal and numeric-edited data items and numeric literals).
+ ARITH(EXTEND) : Max. Number of digits 31.
+ ARITH(COMPAT) : Max. Number of digits 18.
+  Default is: ARITH(COMPAT)</description>
+    </item>
+    
+    <item>
+      <title>INSPECT in COBOL</title>
+      <link>http://purusothaman.me/inspect-in-cobol/</link>
+      <pubDate>Mon, 23 Jan 2012 10:40:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/inspect-in-cobol/</guid>
+      <description>The INSPECT verb has two options, TALLYING and REPLACING. You can do one or the other or both. If both are done, the TALLYING IS DONE BEFORE THE replacing. Some versions of the INSPECT require that all the literals be in quotes. This may call for a redefination if the field is numeric.
+In using the TALLYING format of the INSPECT, you are tallying into a field that is a counter.</description>
+    </item>
+    
+    <item>
+      <title>COBOL Numeric Data Types-COMP</title>
+      <link>http://purusothaman.me/cobol-numeric-data-types-comp/</link>
+      <pubDate>Mon, 23 Jan 2012 10:38:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/cobol-numeric-data-types-comp/</guid>
+      <description>The following common COBOL data types are discussed below:
+ Binary Computational (comp) Comp-1 Comp-2 Comp-3 Packed Decimal  **BINARY **
+Specified for binary data items. Such items have a decimal equivalent consisting of the decimal digits 0 through 9, plus a sign. Negative numbers are represented as the two’s complement of the positive number with the same absolute value. The amount of storage occupied by a binary item depends on the number of decimal digits defined in its PICTURE clause:</description>
+    </item>
+    
+    <item>
+      <title>COBOL Calendar and Date Functions</title>
+      <link>http://purusothaman.me/cobol-calendar-and-date-functions/</link>
+      <pubDate>Wed, 18 Jan 2012 17:49:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/cobol-calendar-and-date-functions/</guid>
+      <description>You need to know what date is 150 days from today (and this kind of stuff happens more often than you&amp;rsquo;d think)? Convert today to an integer date, add 150 to it and convert it back. No more checking which months you&amp;rsquo;re going through to see if it&amp;rsquo;s a 30 day or 31 day month. No more leap year calculations.
+Some sample COBOL Date Example:
+01 WS-TODAY PIC 9(8). 01 WS-FUTURE-DATE PIC 9(8).</description>
+    </item>
+    
+  </channel>
+</rss>

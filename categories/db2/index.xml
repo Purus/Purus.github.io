@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Db2 on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/db2/</link>
+    <description>Recent content in Db2 on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jul 2013 08:09:57 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/db2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DB2 9 Family Fundamentals(000-730) - Q &amp; A</title>
+      <link>http://purusothaman.me/db2-9-family-fundamentals000-730---q--a/</link>
+      <pubDate>Mon, 08 Jul 2013 08:09:57 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/db2-9-family-fundamentals000-730---q--a/</guid>
+      <description>Read and Download several question and answers for the IBM DB2 9 certification exam.
+Section 1 - Planning (14%)
+ Knowledge of restricting data access Knowledge of the features or functions available in DB2 tools (just tools that come with product - distributed +space - i.e., control center, configuration advisor, configuration assistant, command line processor) Knowledge database workloads (OLTP vs warehousing) Knowledge of non-relational data concepts (extenders) Knowledge of XML data implications (non-shreading)  Section 2 - Security (11%)</description>
+    </item>
+    
+    <item>
+      <title>Options on DECLARE CURSOR</title>
+      <link>http://purusothaman.me/options-on-declare-cursor/</link>
+      <pubDate>Wed, 21 Mar 2012 06:58:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/options-on-declare-cursor/</guid>
+      <description>Use FOR READ/FETCH ONLY or WITH UR for retrieval only cursors. Use OPTIMIZE when you know the accurate number of rows that will be fetched Use ORDER BY only when sequence is important Use WITH HOLD statement to prevent COMMIT from destroying the cursor position in batch Programs. Select only those fields that you truly need Use only DCLGEN variables as predicates  While declaring CURSOR in handler we should use OPTIMIZE FOR n ROWS, if we want pass only n rows from DB2 handler back to calling program.</description>
+    </item>
+    
+    <item>
+      <title>Common DB2 SQL Codes</title>
+      <link>http://purusothaman.me/common-db2-sql-codes/</link>
+      <pubDate>Wed, 21 Mar 2012 06:51:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/common-db2-sql-codes/</guid>
+      <description>Successful Execution SQLCODE  000 SUCCESSFUL EXECUTION   Warning SQLCODE  +012 THE UNQUALIFIED COLUMN NAME column-name WAS INTERPRETED AS A CORRELATED REFERENCE   +098 A DYNAMIC SQL STATEMENT ENDS WITH A SEMICOLON   +100 ROW NOT FOUND FOR FETCH, UPDATE OR DELETE, OR THE RESULT OF A QUERY IS AN EMPTY TABLE   +110 SQL UPDATE TO A DATA CAPTURE TABLE NOT SIGNALED TO ORIGINATING SUBSYSTEM   +111 THE SUBPAGES OPTION IS NOT SUPPORTED FOR TYPE 2 INDEXES   +117 THE NUMBER OF INSERT VALUES IS NOT THE SAME AS THE NUMBER OF OBJECT COLUMNS   +162 TABLESPACE database-name.</description>
+    </item>
+    
+    <item>
+      <title>Useful List of SYSIBM tables</title>
+      <link>http://purusothaman.me/useful-list-of-sysibm-tables/</link>
+      <pubDate>Wed, 21 Mar 2012 06:35:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/useful-list-of-sysibm-tables/</guid>
+      <description>SYSCHECKDEP Column references for CHECK constraints
+SYSCHECKS CHECK constraint specifications
+SYSCHECKS2 (V7) Information about CHECK constraints on DB2 Catalog tables created for V7 or later
+SYSCOLAUTH The UPDATE privileges held by DB2 users on table or view columns
+SYSCOLDIST Cardinality, frequent value, and non-padded frequent value distribution statistics for the first key column of an index key
+SYSCOLDIST_HIST (V7) Column distribution statistics history
+SYSCOLSTATS The partition statistics for selected columns</description>
+    </item>
+    
+    <item>
+      <title>Ranking and Numbering for Records in DB2</title>
+      <link>http://purusothaman.me/ranking-and-numbering-for-records-in-db2/</link>
+      <pubDate>Mon, 23 Jan 2012 12:01:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/ranking-and-numbering-for-records-in-db2/</guid>
+      <description>DB2 supports ranking and numbering in much the same way that Oracle does.
+The available functions are:
+ ROW_NUMBER(), which simply numbers the returned rows sequentially &amp;lt;&amp;#47;li&amp;gt; RANK(), which ranks the results, but, in the case of a tie, gives the same number to each and leaves a gap to compensate &amp;lt;&amp;#47;li&amp;gt; DENSE_RANK() operates the same as RANK() but doesn&amp;rsquo;t leave any gaps.  Listing 1 - Ranking and Numbering Results</description>
+    </item>
+    
+    <item>
+      <title>Selecting first few rows in DB2</title>
+      <link>http://purusothaman.me/selecting-first-few-rows-in-db2/</link>
+      <pubDate>Mon, 23 Jan 2012 11:58:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/selecting-first-few-rows-in-db2/</guid>
+      <description>DB2&amp;rsquo;s method of performing a Top-N query is the FETCH FIRST clause. You can append these variations to a regular SELECT query:
+ FETCH FIRST ROW ONLY
+ FETCH FIRST 1 ROW ONLY FETCH FIRST integer ROWS ONLY  Interestingly, you can also use:
+ FETCH FIRST 1 ROWS ONLY FETCH FIRST 5 ROW ONLY  They aren&amp;rsquo;t as nice grammatically, but they make it easier to generate queries automatically - you don&amp;rsquo;t have to worry about whether to say ROW or ROWS.</description>
+    </item>
+    
+    <item>
+      <title>DB2 Index with Expressions</title>
+      <link>http://purusothaman.me/db2-index-with-expressions/</link>
+      <pubDate>Mon, 23 Jan 2012 06:09:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/db2-index-with-expressions/</guid>
+      <description>Prior to DB2 9, the create index statement only allowed you to use the column name from the table the index is being built on. The same value for each column stored on the table was copied into the index and used to quickly identify the row when searching by that column name. Now with DB2 9, the create index statement supports a feature known as key expressions. Here’s why key expressions should interest you.</description>
+    </item>
+    
+    <item>
+      <title>Like the DB2 LIKE</title>
+      <link>http://purusothaman.me/like-the-db2-like/</link>
+      <pubDate>Fri, 20 Jan 2012 10:46:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/like-the-db2-like/</guid>
+      <description>The LIKE phrase defines a mask for comparing characters:
+WHERE COL_VAL [NOT] LIKE mask  A mask may be a host variable or a literal enclosed in quotes and may contain any number of:
+   Mask What to Find?     character literal for an exact match   underscore character for any single character   percent sign character for any sequence of characters of length 0 or more    For example:</description>
+    </item>
+    
+    <item>
+      <title>Handling NULL in DB2</title>
+      <link>http://purusothaman.me/handling-null-in-db2/</link>
+      <pubDate>Fri, 20 Jan 2012 10:43:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/handling-null-in-db2/</guid>
+      <description>The value of an indicator variable tells the status of a row after a query.
+Host Variable:
+01 FILLER. 05 WS-AMOUNT PIC S9(5)V9(2) COMP-3. 05 WS-CUSTNUM PIC X(5).  Indicator variable:
+01 FILLER. 05 AMT-IND PIC S9(4) COMP.  Consider the below SQL.
+EXEC SQL SELECT CUST_AMOUNT INTO :WS-AMOUNT:AMT-IND FROM T100.CUST WHERE CUST_ID = :WS-CUSTNUM END-EXEC.  After a query, the indicator variable contains the following:
+ 0 - Column is not null -1 - Column is null -2 - Column is null as result of conversion error +length - Full length of column that was truncated to fit a short host variable  Some points to ponder:</description>
+    </item>
+    
+    <item>
+      <title>Isolation level in DB2</title>
+      <link>http://purusothaman.me/isolation-level-in-db2/</link>
+      <pubDate>Fri, 20 Jan 2012 10:40:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/isolation-level-in-db2/</guid>
+      <description>The list of isoloation leves are listed below.
+ SERIALIZABLE(Repeatable read (RR)) REPEATABLE READ(Read stability (RS)) READ COMMITTED(Cursor stability (CS)) (default) READ UNCOMMITTED(Uncommitted read (UR))  SERIALIZABLE (DB2 UDB: Repeatable Read)
+Locks the table within a unit of work. An application can retrieve and operate on rows in the table as many times as needed. However, the entire table is locked, not just the rows that are retrieved. Until the unit of work completes, no other application can update, delete, or insert a row that would affect the table.</description>
+    </item>
+    
+    <item>
+      <title>Points to Ponder on DB2 NULL</title>
+      <link>http://purusothaman.me/points-to-ponder-on-db2-null/</link>
+      <pubDate>Thu, 19 Jan 2012 21:40:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/points-to-ponder-on-db2-null/</guid>
+      <description>NULLs can present problems because they are handled differently by different computers and the collating sequence is inconsistent with regard to NULLs. Unless you specify NOT NULL, the default is to allow for NULLs. It&amp;rsquo;s easy for us to get lazy and allow columns to contain NULLs when it would be better to specify NOT NULL. Allowing for NULLs will create UNKNOWN logical values. Always test your code with NULLs in all possible places.</description>
+    </item>
+    
+    <item>
+      <title>Explanation on DB2 Explain</title>
+      <link>http://purusothaman.me/explanation-on-db2-explain/</link>
+      <pubDate>Thu, 19 Jan 2012 21:29:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/explanation-on-db2-explain/</guid>
+      <description>When an SQL is executed against or bound to a DB2 database, DB2 Optimizer tool defines the access path used to access the data. This access path is defined according to tables’ statistics generated by DB2 Runstats tool.
+The Explain command details the access path defined by DB2 and allows you to analyze how the data will be accessed and how you can improve the command’s performance.
+A table called PLAN_TABLE which has your user id as its owner is required for working on DB2 Explain.</description>
+    </item>
+    
+    <item>
+      <title>Verification of DB2 Consistency token</title>
+      <link>http://purusothaman.me/verification-of-db2-consistency-token/</link>
+      <pubDate>Wed, 18 Jan 2012 18:10:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/verification-of-db2-consistency-token/</guid>
+      <description>When a Job abends at a program due to bind error with SQL code of -805 or -818 then generally there is issue with consistency token (often referred as CONTOKEN). These kind of abends can be easily fixed if we can find where the CONTOKEN mismatch occurs.
+STEP1:- CONTOKEN in Package
+RUN the following query:
+ SELECT NAME, CONTOKEN, COLLID, PDSNAME FROM SYSIBM.SYSPACKAGE WHERE NAME=&amp;lsquo;MODULE&amp;rsquo; AND COLLID=&amp;lsquo;COLLID&amp;rsquo;
+ Provide the name of the module in &amp;ldquo;NAME&amp;rdquo; and Collection name in &amp;ldquo;COLLID&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

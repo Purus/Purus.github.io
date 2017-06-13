@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fun on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/fun/</link>
+    <description>Recent content in Fun on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Feb 2014 23:29:33 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/fun/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Memes-Yearly Bonus</title>
+      <link>http://purusothaman.me/memes-yearly-bonus/</link>
+      <pubDate>Tue, 25 Feb 2014 23:29:33 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/memes-yearly-bonus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memes - Appraisal Meeting</title>
+      <link>http://purusothaman.me/memes---appraisal-meeting/</link>
+      <pubDate>Tue, 25 Feb 2014 23:22:18 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/memes---appraisal-meeting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memes - Coffee Break</title>
+      <link>http://purusothaman.me/memes---coffee-break/</link>
+      <pubDate>Tue, 25 Feb 2014 23:07:14 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/memes---coffee-break/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memes-Project Release</title>
+      <link>http://purusothaman.me/memes-project-release/</link>
+      <pubDate>Tue, 25 Feb 2014 22:59:50 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/memes-project-release/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memes - After Project Meetings</title>
+      <link>http://purusothaman.me/memes---after-project-meetings/</link>
+      <pubDate>Tue, 25 Feb 2014 22:44:39 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/memes---after-project-meetings/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

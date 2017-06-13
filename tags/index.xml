@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/tags/</link>
+    <description>Recent content in Tags on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Jan 2012 18:13:41 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kavithai</title>
+      <link>http://purusothaman.me/tags/kavithai/</link>
+      <pubDate>Mon, 02 Jan 2012 18:13:41 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/tags/kavithai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tamil</title>
+      <link>http://purusothaman.me/tags/tamil/</link>
+      <pubDate>Mon, 02 Jan 2012 18:13:41 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/tags/tamil/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

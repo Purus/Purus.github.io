@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/programming/</link>
+    <description>Recent content in Programming on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jan 2017 16:49:34 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting JIRA Issues based on filter using Java</title>
+      <link>http://purusothaman.me/getting-jira-issues-based-on-filter-using-java/</link>
+      <pubDate>Tue, 10 Jan 2017 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/getting-jira-issues-based-on-filter-using-java/</guid>
+      <description>Let&amp;rsquo;s see how to fetch all issues from JIRA in JAVA based on the provided JQL search filter.
+ To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to How to work with Atlassian JIRA API using Java.
+ The full code is provided below to get Name and Id of all available issue types.
+import com.</description>
+    </item>
+    
+    <item>
+      <title>Create a new Issue in JIRA using Java API</title>
+      <link>http://purusothaman.me/create-a-new-issue-in-jira-using-java-api/</link>
+      <pubDate>Thu, 22 Dec 2016 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/create-a-new-issue-in-jira-using-java-api/</guid>
+      <description>We are now going to see how to create new JIRA issue in JAVA using the REST API library. We can use this cod with some little modifications to bulk create several issues from an Excel sheet or an CSV file.
+ To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to How to work with Atlassian JIRA API using Java.</description>
+    </item>
+    
+    <item>
+      <title>Get JIRA Field ID using Java</title>
+      <link>http://purusothaman.me/get-jira-field-id-using-java/</link>
+      <pubDate>Sat, 12 Nov 2016 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/get-jira-field-id-using-java/</guid>
+      <description>Let&amp;rsquo;s see how to fetch the field Id from JIRA in JAVA using the REST API library provided by Atlassian.
+ To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to How to work with Atlassian JIRA API using Java.
+ The full code is provided below to get the ID value of a &amp;ldquo;Module Priority&amp;rdquo; field for the issue type &amp;ldquo;Defect&amp;rdquo; present in the project &amp;ldquo;PROJECT-KEY&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Getting all JIRA Issue Details using Java</title>
+      <link>http://purusothaman.me/getting-all-jira-issue-details-using-java/</link>
+      <pubDate>Mon, 10 Oct 2016 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/getting-all-jira-issue-details-using-java/</guid>
+      <description>Let&amp;rsquo;s see how to fetch all details of a given JIRA issue in JAVA using the REST API library provided by Atlassian.
+ To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to How to work with Atlassian JIRA API using Java.
+ The full code is provided below to get few basic details of an example issue called PROJECT-359.</description>
+    </item>
+    
+    <item>
+      <title>Getting all JIRA Issue Types using Java</title>
+      <link>http://purusothaman.me/getting-all-jira-issue-types-using-java/</link>
+      <pubDate>Sat, 01 Oct 2016 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/getting-all-jira-issue-types-using-java/</guid>
+      <description>Let&amp;rsquo;s see how to fetch all available issues from JIRA in JAVA using the REST API library provided by Atlassian.
+ To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to How to work with Atlassian JIRA API using Java.
+ The full code is provided below to get Name and Id of all available issue types.</description>
+    </item>
+    
+    <item>
+      <title>How to work with Atlassian JIRA API using Java</title>
+      <link>http://purusothaman.me/how-to-work-with-atlassian-jira-api-using-java/</link>
+      <pubDate>Sun, 18 Sep 2016 16:49:34 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/how-to-work-with-atlassian-jira-api-using-java/</guid>
+      <description>To work with JIRA REST API in Java, we need to import the required Java packages and we might also need to import the trust-store file.
+Java Package Dependencies If you are using Maven, you can easily add the below dependencies in your pom.xml file for working with Atlassian JIRA API.
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.atlassian.jira&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jira-rest-java-client-core&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.0.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.atlassian.jira&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jira-rest-java-client-api&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.0.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  Creating Trust Store File Now, you will need to add your certificate to the trust store so that Java can connect to your API backend.</description>
+    </item>
+    
+  </channel>
+</rss>

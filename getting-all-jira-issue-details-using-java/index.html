@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta property="og:title" content="Getting all JIRA Issue Details using Java">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2016-10-10">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="http://purusothaman.me/getting-all-jira-issue-details-using-java/">
+    <meta property="og:site_name" content="Purusothaman Ramanujam">
+    
+    <meta name="generator" content="Hugo 0.21" />
+    <title>Getting all JIRA Issue Details using Java &middot; Purusothaman Ramanujam</title>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="http://purusothaman.me/css/style.css">
+    
+    <link href="http://purusothaman.me/index.xml" rel="alternate" type="application/rss+xml" title="Purusothaman Ramanujam" />
+    
+    
+    <link rel="icon" href="http://purusothaman.me/favicon.ico" />
+    
+
+    
+    
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="http://purusothaman.me/">Purusothaman Ramanujam</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+		
+			<h1 class="text-center"><a href="http://purusothaman.me/">Purusothaman Ramanujam</a></h1>
+		
+		
+		
+			<small class="text-center center-block">My Personal Flavour</small>
+		
+		
+		
+			<img id="profile-pic" src="http://purusothaman.me//img/avatar.jpg" alt="My Picture" class="img-circle center-block">
+		
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/purus"><i class="fa fa-github fa-2x"></i></a>
+			
+
+			<a href="mailto:purushoth.r@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+		<div id="links" class="text-center">
+			
+			
+		</div>
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+<main>
+	<header>
+		<h1>Getting all JIRA Issue Details using Java</h1>
+	</header>
+
+	<article>
+		<p>Let&rsquo;s see how to fetch all details of a given JIRA issue in JAVA using the REST API library provided by Atlassian.</p>
+
+<blockquote>
+<p>To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to <a href="/programming/2016/09/18/how-to-use-JIRA-API-in-Java.html">How to work with Atlassian JIRA API using Java</a>.</p>
+</blockquote>
+
+<p>The full code is provided below to get few basic details of an example issue called PROJECT-359.</p>
+
+<pre><code class="language-java">import com.atlassian.jira.rest.client.api.IssueRestClient;
+import com.atlassian.jira.rest.client.api.JiraRestClient;
+import com.atlassian.jira.rest.client.api.domain.*;
+import com.atlassian.jira.rest.client.auth.BasicHttpAuthenticationHandler;
+import com.atlassian.jira.rest.client.internal.async.AsynchronousJiraRestClientFactory;
+
+import java.io.IOException;
+import java.net.URI;
+import java.util.Iterator;
+
+// Get details of a given JIRA Issue
+public class Tutorial01 {
+    public static void main(String[] args) throws IOException {
+        System.setProperty(&quot;javax.net.ssl.trustStore&quot;, &quot;C:/Users/PurusR/myTrustStore&quot;);
+
+        URI jiraServerUri = URI.create(&quot;https://localhost/jira/&quot;);
+
+        AsynchronousJiraRestClientFactory factory = new AsynchronousJiraRestClientFactory();
+
+        JiraRestClient restClient = factory.create(jiraServerUri, new BasicHttpAuthenticationHandler(&quot;username&quot;, &quot;password&quot;));
+        IssueRestClient issueClient = restClient.getIssueClient();
+
+        try {
+            Issue issue = issueClient.getIssue(&quot;PROJECT-359&quot;).claim();
+
+            System.out.println(&quot;Key : &quot; + issue.getKey());
+            System.out.println(&quot;Summary : &quot; + issue.getSummary());
+            System.out.println(&quot;Description : &quot; + issue.getDescription());
+            System.out.println(&quot;Status : &quot; + issue.getStatus().getName());
+            System.out.println(&quot;Issue Type : &quot; + issue.getIssueType().getName());
+            System.out.println(&quot;Assignee : &quot; + issue.getAssignee().getDisplayName());
+            System.out.println(&quot;Reporter : &quot; + issue.getReporter().getDisplayName());
+
+            Iterator&lt;BasicComponent&gt; allComponents = issue.getComponents().iterator();
+            while (allComponents.hasNext()){
+                BasicComponent component = allComponents.next();
+                System.out.println(&quot;Component : &quot; + component.getName());
+            }
+
+            Iterator&lt;String&gt; allLabels = issue.getLabels().iterator();
+            while (allLabels.hasNext()){
+                String label = allLabels.next();
+                System.out.println(&quot;Label : &quot; + label);
+            }
+
+            Iterator&lt;IssueLink&gt; linkedIssues = issue.getIssueLinks().iterator();
+            while (linkedIssues.hasNext()){
+                IssueLink link = linkedIssues.next();
+                System.out.println(&quot;Linked Issue : &quot; + link.getTargetIssueKey() + &quot; - &quot; + link.getIssueLinkType());
+            }
+
+            Iterator&lt;Comment&gt; comments = issue.getComments().iterator();
+            while (comments.hasNext()){
+                Comment comment = comments.next();
+                System.out.println(&quot;Comment : &quot; + comment.getBody() + &quot; by &quot; + comment.getAuthor().getDisplayName());
+            }
+
+            Iterator&lt;Attachment&gt; attachments  = issue.getAttachments().iterator();
+            while (attachments.hasNext()){
+                Attachment attachment = attachments.next();
+                System.out.println(&quot;Attachment : &quot; + attachment.getFilename());
+            }
+        } finally {
+            restClient.close();
+        }
+
+    }
+}
+</code></pre>
+
+	</article>
+</main>
+
+<div id="bottom-nav" class="text-center center-block">
+	<a href=" http://purusothaman.me/" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
+</div>
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'purusothaman-ramanujam';
+    var disqus_identifier = 'http:\/\/purusothaman.me\/getting-all-jira-issue-details-using-java\/';
+    var disqus_title = 'Getting all JIRA Issue Details using Java';
+    var disqus_url = 'http:\/\/purusothaman.me\/getting-all-jira-issue-details-using-java\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42031335-1', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "http:\/\/purusothaman.me\/";
+  </script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="http://purusothaman.me//js/App.js"></script>
+  
+</body>
+</html>

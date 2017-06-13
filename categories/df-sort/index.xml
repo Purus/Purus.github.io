@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Df Sort on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/df-sort/</link>
+    <description>Recent content in Df Sort on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Mar 2012 09:02:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/df-sort/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Converting a file from VB to FB.</title>
+      <link>http://purusothaman.me/converting-a-file-from-vb-to-fb./</link>
+      <pubDate>Wed, 21 Mar 2012 09:02:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/converting-a-file-from-vb-to-fb./</guid>
+      <description>DFSORT can be used to do VB to FB conversion, when sorting, copying or merging. The VTOF or CONVERT and OUTREC operands of OUTFIL can be used to change variable-length (e.g. VB) input records to fixed-length (e.g. FB) output records. VTOF or CONVERT indicates that conversion is to be performed and OUTREC defines the reformatted records. All output data sets for which VTOF or CONVERT is used must have or will be given fixed-length record formats.</description>
+    </item>
+    
+    <item>
+      <title>Change uppercase to lowercase or lowercase to uppercase in Sort</title>
+      <link>http://purusothaman.me/change-uppercase-to-lowercase-or-lowercase-to-uppercase-in-sort/</link>
+      <pubDate>Wed, 18 Jan 2012 14:52:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/change-uppercase-to-lowercase-or-lowercase-to-uppercase-in-sort/</guid>
+      <description>Translation features of INREC, OUTREC and OUTFIL make it easy to change the case of characters in your fields.
+The TRAN=LTOU operand can be used to change lowercase EBCDIC letters (a-z) to uppercase EBCDIC letters (A-Z) anywhere in a field.
+The TRAN=UTOL operand can be used to change uppercase EBCDIC letters to lowercase EBCDIC letters anywhere in a field.
+You could change the case in the entire record as well or part of the record.</description>
+    </item>
+    
+    <item>
+      <title>Add leading and trailing Characters in Sort</title>
+      <link>http://purusothaman.me/add-leading-and-trailing-characters-in-sort/</link>
+      <pubDate>Wed, 18 Jan 2012 12:50:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/add-leading-and-trailing-characters-in-sort/</guid>
+      <description>Lets assume that we have a sequential dataset with records as below:
+ONE TWO THREE FOUR FIVE  I want to reformat the records for output as follows:
+NUMBER &#39;ONE&#39; NUMBER &#39;TWO&#39; NUMBER &#39;THREE&#39; NUMBER &#39;FOUR&#39; NUMBER &#39;FIVE&#39;  You can do this quite easily with DFSORT&amp;rsquo;s JFY function as follows:
+ OPTION COPY
+INREC BUILD=(1,13,JFY=(SHIFT=LEFT,LEAD=C&amp;rsquo;NUMBER &amp;ldquo;&amp;lsquo;, TRAIL=C&amp;rdquo;&amp;ldquo;)
+ SHIFT=LEFT left-justifies the data. LEAD inserts the hard coded text NUMBER &amp;lsquo; before the value with no intervening blanks.</description>
+    </item>
+    
+  </channel>
+</rss>

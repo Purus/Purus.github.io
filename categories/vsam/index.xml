@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vsam on Purusothaman Ramanujam</title>
+    <link>http://purusothaman.me/categories/vsam/</link>
+    <description>Recent content in Vsam on Purusothaman Ramanujam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Jan 2012 10:36:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://purusothaman.me/categories/vsam/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VSAM record count using File-Aid</title>
+      <link>http://purusothaman.me/vsam-record-count-using-file-aid/</link>
+      <pubDate>Fri, 20 Jan 2012 10:36:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/vsam-record-count-using-file-aid/</guid>
+      <description>Whats the best way to count the number of records in a VSAM File?
+ Choose FILE-AID Option 3.8. At the prompt of &amp;hellip;.ENTER NEXT FUNCTION OR END , enter TALLY. You will get the record count. Type END to exit.  </description>
+    </item>
+    
+    <item>
+      <title>Read Only VSM Files</title>
+      <link>http://purusothaman.me/read-only-vsm-files/</link>
+      <pubDate>Fri, 20 Jan 2012 10:32:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/read-only-vsm-files/</guid>
+      <description>By using INHIBIT along with ALTER command, we can have a read-only VSAM dataset.
+Example:
+//STEP1 EXEC PGM=IDCAMS //SYSPRINT DD SYSOUT=* //SYSIN DD * ALTER – SECRET.KSDS.DATA – INHIBIT ALTER – SECRET.KSDS.INDEX – INHIBIT /*  Notice that the ALTER command is used with DATA and INDEX and not with the cluster.</description>
+    </item>
+    
+    <item>
+      <title>Dummy VSM Dataset in JCL</title>
+      <link>http://purusothaman.me/dummy-vsm-dataset-in-jcl/</link>
+      <pubDate>Fri, 20 Jan 2012 10:28:00 +0000</pubDate>
+      
+      <guid>http://purusothaman.me/dummy-vsm-dataset-in-jcl/</guid>
+      <description>In general we use DUMMY datasets in JCL instead of a actual file for some requirements.
+But how can we specify dummy VSAM dataset in a JCL?
+The parameter AMP=&amp;lsquo;AMORG&amp;rsquo; tells the OS to treat the file as VSAM file.
+ //NOVSAMIO DD DUMMY,AMP=&amp;lsquo;AMORG&amp;rsquo;
+ </description>
+    </item>
+    
+  </channel>
+</rss>
