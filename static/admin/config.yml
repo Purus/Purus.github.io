@@ -1,5 +1,5 @@
 backend:
-  name: purusothaman
+  name: optimus-purus
   branch: hugo
 media_folder: static/img
 public_folder: /img
