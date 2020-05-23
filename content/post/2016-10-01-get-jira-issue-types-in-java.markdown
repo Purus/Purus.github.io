@@ -10,7 +10,7 @@ title: Getting all JIRA Issue Types using Java
 
 Let's see how to fetch all available issues from JIRA in JAVA using the REST API library provided by Atlassian.
 
-> To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to [How to work with Atlassian JIRA API using Java](/programming/2016/09/18/how-to-use-JIRA-API-in-Java.html).
+> To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to [How to work with Atlassian JIRA API using Java](/how-to-use-JIRA-API-in-Java.html).
 
 The full code is provided below to get Name and Id of all available issue types.
 
