@@ -12,7 +12,7 @@ highlight : true
 
 Let's see how to fetch all issues from JIRA in JAVA based on the provided JQL search filter.
 
-> To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to [How to work with Atlassian JIRA API using Java](/how-to-use-JIRA-API-in-Java.html).
+> To know about the required Maven dependencies and how to generate the trust store file used in the code below, you can refer to [How to work with Atlassian JIRA API using Java](/how-to-work-with-atlassian-jira-api-using-java/).
 
 The full code is provided below to get Name and Id of all available issue types.
 
