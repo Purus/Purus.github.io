@@ -1,5 +1,5 @@
 backend:
-  name: optimus-purus
+  name: git-gateway
   branch: hugo
 media_folder: static/img
 public_folder: /img
