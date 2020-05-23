@@ -1,5 +1,6 @@
 backend:
   name: github
+  repo: Purus/purus.github.io
   branch: hugo
 media_folder: static/img
 public_folder: /img
